@@ -24,6 +24,7 @@ import ChangePassword from '../screens/profile/ChangePassword'; // Ensure this f
 // --- UTILS ---
 import TTSDebugScreen from '../screens/TTSDebugScreen'; // Adjust path if you moved it
 import ResultModal from '../screens/modals/ResultModal'; // Keep this as a modal
+import ChatAssistantScreen from '../screens/ChatAssistantScreen'; // AI Chat Assistant
 
 const Stack = createNativeStackNavigator();
 
@@ -60,6 +61,21 @@ const AppStack = () => {
 
             <Stack.Group screenOptions={{ presentation: 'transparentModal' }}>
                 <Stack.Screen name="Result" component={ResultModal} />
+            </Stack.Group>
+
+            {/* 7. AI Chat Assistant (Modal) */}
+            <Stack.Group screenOptions={{ presentation: 'modal' }}>
+                <Stack.Screen
+                    name="ChatAssistant"
+                    component={ChatAssistantScreen}
+                    options={{
+                        headerShown: true,
+                        title: 'AI Tutor 🇩🇪',
+                        headerStyle: { backgroundColor: '#58CC02' },
+                        headerTintColor: '#fff',
+                        headerTitleStyle: { fontWeight: 'bold' },
+                    }}
+                />
             </Stack.Group>
 
         </Stack.Navigator>

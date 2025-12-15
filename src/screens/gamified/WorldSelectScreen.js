@@ -9,6 +9,9 @@ import WorldSelect_Standard from '../../components/themes/WorldSelect_Standard';
 import WorldSelect_Glass from '../../components/themes/WorldSelect_Glass';
 import WorldSelect_Cinematic from '../../components/themes/WorldSelect_Cinematic';
 
+// Chat FAB
+import ChatFAB from '../../components/ui/ChatFAB';
+
 const WorldSelectScreen = ({ navigation }) => {
     const [currentTheme, setCurrentTheme] = useState(null);
 
@@ -30,15 +33,25 @@ const WorldSelectScreen = ({ navigation }) => {
         return <View style={{ flex: 1, backgroundColor: '#020617' }} />;
     }
 
-    switch (currentTheme) {
-        case WORLD_THEMES.GLASS:
-            return <WorldSelect_Glass navigation={navigation} />;
-        case WORLD_THEMES.CINEMATIC:
-            return <WorldSelect_Cinematic navigation={navigation} />;
-        case WORLD_THEMES.STANDARD:
-        default:
-            return <WorldSelect_Standard navigation={navigation} />;
-    }
+    // Render theme with ChatFAB overlay
+    const renderTheme = () => {
+        switch (currentTheme) {
+            case WORLD_THEMES.GLASS:
+                return <WorldSelect_Glass navigation={navigation} />;
+            case WORLD_THEMES.CINEMATIC:
+                return <WorldSelect_Cinematic navigation={navigation} />;
+            case WORLD_THEMES.STANDARD:
+            default:
+                return <WorldSelect_Standard navigation={navigation} />;
+        }
+    };
+
+    return (
+        <View style={{ flex: 1 }}>
+            {renderTheme()}
+            <ChatFAB navigation={navigation} />
+        </View>
+    );
 };
 
 export default WorldSelectScreen;
