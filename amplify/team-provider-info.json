@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-germansikho-dev-3afb4-authRole",
+      "UnauthRoleArn": "arn:aws:iam::391912983222:role/amplify-germansikho-dev-3afb4-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::391912983222:role/amplify-germansikho-dev-3afb4-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-germansikho-dev-3afb4-deployment",
+      "UnauthRoleName": "amplify-germansikho-dev-3afb4-unauthRole",
+      "StackName": "amplify-germansikho-dev-3afb4",
+      "StackId": "arn:aws:cloudformation:eu-central-1:391912983222:stack/amplify-germansikho-dev-3afb4/446d75d0-c7f3-11f0-890e-0218430c84fd",
+      "AmplifyAppId": "d20oim0d4h1q3g"
+    },
+    "categories": {
+      "auth": {
+        "germansikho9ec46c78": {}
+      },
+      "api": {
+        "germansikho": {}
+      }
+    }
+  }
+}

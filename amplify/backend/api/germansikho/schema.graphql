@@ -1,0 +1,61 @@
+# This file is used for the GraphQL API
+# AWS Amplify will generate DynamoDB tables and resolvers based on this schema
+
+type Module @model @auth(rules: [{allow: public, operations: [read]}, {allow: private, operations: [create, update, delete]}]) {
+  id: ID!
+  moduleId: String! @index(name: "byModuleId", queryField: "moduleByModuleId")
+  title: String!
+  description: String
+  type: String! # "grammar" or "vocabulary"
+  phase: String! # "phase1", "phase2", etc.
+  order: Int!
+  icon: String
+  color: String
+  totalItems: Int!
+  vocabItems: [VocabItem] @hasMany(indexName: "byModule", fields: ["id"])
+  quizQuestions: [QuizQuestion] @hasMany(indexName: "byModule", fields: ["id"])
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+
+type VocabItem @model @auth(rules: [{allow: public, operations: [read]}, {allow: private, operations: [create, update, delete]}]) {
+  id: ID!
+  moduleId: ID! @index(name: "byModule", queryField: "vocabItemsByModule")
+  german: String!
+  english: String!
+  example: String
+  image: String
+  tags: [String]
+  order: Int!
+  module: Module @belongsTo(fields: ["moduleId"])
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+
+type QuizQuestion @model @auth(rules: [{allow: public, operations: [read]}, {allow: private, operations: [create, update, delete]}]) {
+  id: ID!
+  moduleId: ID! @index(name: "byModule", queryField: "quizQuestionsByModule")
+  question: String!
+  correctAnswer: String!
+  options: [String!]!
+  order: Int!
+  module: Module @belongsTo(fields: ["moduleId"])
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+
+type UserProgress @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  userId: String! @index(name: "byUserId", queryField: "userProgressByUserId")
+  completedModules: [String!]! # Array of module IDs
+  moduleScores: AWSJSON # JSON object: { "moduleId": { score: 8, totalQuestions: 10, attempts: 2 } }
+  totalScore: Int!
+  level: String!
+  achievements: [String!]! # Array of achievement IDs
+  lastStudyDate: AWSDateTime
+  studyStreak: Int! # Number of consecutive days studied
+  totalVocabLearned: Int! # Total vocabulary items learned
+  totalQuizzesTaken: Int! # Total quizzes completed
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}

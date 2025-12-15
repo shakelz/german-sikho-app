@@ -1,0 +1,18 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.6.1
+2 info using node@v24.11.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\React Native Projects\GermanSikho\.npmrc
+5 silly config load:file:C:\Users\mdabd\.npmrc
+6 silly config load:file:C:\Users\mdabd\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm react-native start
+8 verbose argv "react-native" "start" "--cache" "-reset"
+9 verbose logfile logs-max:10 dir:C:\React Native Projects\GermanSikho\-reset\_logs\2025-11-25T22_05_22_737Z-
+10 verbose logfile C:\React Native Projects\GermanSikho\-reset\_logs\2025-11-25T22_05_22_737Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose cwd C:\React Native Projects\GermanSikho
+13 verbose os Windows_NT 10.0.22621
+14 verbose node v24.11.0
+15 verbose npm  v11.6.1
+16 verbose exit 1
+17 verbose code 1

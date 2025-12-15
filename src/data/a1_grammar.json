@@ -1,0 +1,2985 @@
+[
+    {
+        "id": "articles",
+        "title": "The Articles (Der/Die/Das)",
+        "category": "Basics",
+        "order": 1,
+        "description": "Learn the 3 genders of German nouns.",
+        "comparison_hint": {
+            "hindi": "Hindi mein 2 genders hote hain: Pulling (Masculine) aur Striling (Feminine). Jaise 'Ladka' (M) aur 'Ladki' (F). German mein 3 hote hain: Masculine (Der), Feminine (Die), aur Neuter (Das).",
+            "english": "English has 'the' for everything. German has 3 words for 'the' depending on gender: Der (Masculine), Die (Feminine), Das (Neuter)."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "In German, every noun has a gender. It's not always logical (e.g., a girl is 'neutral'!). You must learn the article with the word."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Gender",
+                    "Article",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Masculine",
+                        "Der",
+                        "Der Mann (The Man)"
+                    ],
+                    [
+                        "Feminine",
+                        "Die",
+                        "Die Frau (The Woman)"
+                    ],
+                    [
+                        "Neuter",
+                        "Das",
+                        "Das Kind (The Child)"
+                    ],
+                    [
+                        "Plural",
+                        "Die",
+                        "Die Kinder (The Children)"
+                    ]
+                ],
+                "highlight_pattern": "Der|Die|Das"
+            },
+            {
+                "type": "tip",
+                "content": "Tip: All Plural nouns use 'Die', regardless of their singular gender!"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_art_1",
+                "type": "multiple_choice",
+                "question": "Which article is used for 'Mann' (Man)?",
+                "options": [
+                    "Der",
+                    "Die",
+                    "Das"
+                ],
+                "correct_answer": "Der",
+                "trap_explanation": "You might think it's random, but 'Mann' is a male person, so it's usually Masculine (Der).",
+                "explanation": "'Mann' is Masculine, so we use 'Der'.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_art_2",
+                "type": "multiple_choice",
+                "question": "Which article is used for 'Frau' (Woman)?",
+                "options": [
+                    "Der",
+                    "Die",
+                    "Das"
+                ],
+                "correct_answer": "Die",
+                "trap_explanation": "Don't confuse it with 'Der'. Women are Feminine in grammar too!",
+                "explanation": "'Frau' is Feminine, so we use 'Die'.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_art_3",
+                "type": "multiple_choice",
+                "question": "Which article is used for 'Mädchen' (Girl)?",
+                "options": [
+                    "Der",
+                    "Die",
+                    "Das"
+                ],
+                "correct_answer": "Das",
+                "trap_explanation": "TRAP! 'Mädchen' means girl, so you think 'Die'. But words ending in '-chen' are ALWAYS Neuter (Das).",
+                "explanation": "All words ending in '-chen' are Neuter (Das), even if they refer to a female.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_art_4",
+                "type": "fill_blank",
+                "question": "___ Auto (The Car - Neuter)",
+                "options": [
+                    "Der",
+                    "Die",
+                    "Das"
+                ],
+                "correct_answer": "Das",
+                "trap_explanation": "Cars aren't male or female. In German, 'Auto' is Neuter.",
+                "explanation": "'Auto' is Neuter: Das Auto.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_art_5",
+                "type": "true_false",
+                "question": "In Plural, we always use 'Die'. (e.g., Die Autos, Die Männer)",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "True",
+                "trap_explanation": "You might think plural keeps the original gender (Der Männer?), but no. Plural is always Die.",
+                "explanation": "Correct! The plural article is always 'Die' in the nominative case.",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "id": "pronouns",
+        "title": "Personal Pronouns",
+        "category": "Basics",
+        "order": 2,
+        "description": "I, You, He, She, It in German.",
+        "comparison_hint": {
+            "hindi": "Jaise Hindi mein 'Main', 'Tum', 'Woh' hote hain, waise hi German mein 'Ich', 'Du', 'Er/Sie/Es' hote hain. 'Aap' ke liye German mein 'Sie' (Capital S) use hota hai.",
+            "english": "Equivalent to I, You, He, She, It, We, You (plural), They."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "These are the words you use to replace names."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "English",
+                    "German",
+                    "Hindi Eq."
+                ],
+                "rows": [
+                    [
+                        "I",
+                        "Ich",
+                        "Main"
+                    ],
+                    [
+                        "You (Informal)",
+                        "Du",
+                        "Tum"
+                    ],
+                    [
+                        "He",
+                        "Er",
+                        "Woh (Ladka)"
+                    ],
+                    [
+                        "She",
+                        "Sie",
+                        "Woh (Ladki)"
+                    ],
+                    [
+                        "It",
+                        "Es",
+                        "Woh (Cheez)"
+                    ],
+                    [
+                        "We",
+                        "Wir",
+                        "Hum"
+                    ],
+                    [
+                        "You (All)",
+                        "Ihr",
+                        "Tum Sab"
+                    ],
+                    [
+                        "They / You (Formal)",
+                        "sie / Sie",
+                        "Ve / Aap"
+                    ]
+                ],
+                "highlight_pattern": "Ich|Du|Er|Sie|Es|Wir|Ihr"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_pro_1",
+                "type": "multiple_choice",
+                "question": "How do you say 'I' in German?",
+                "options": [
+                    "Ich",
+                    "Du",
+                    "Er"
+                ],
+                "correct_answer": "Ich",
+                "trap_explanation": "Don't confuse with 'Ish' sound. It's written 'Ich'.",
+                "explanation": "'I' is 'Ich'.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_pro_2",
+                "type": "multiple_choice",
+                "question": "How do you say 'You' to a friend (Informal)?",
+                "options": [
+                    "Sie",
+                    "Du",
+                    "Ihr"
+                ],
+                "correct_answer": "Du",
+                "trap_explanation": "'Sie' is for 'Aap' (Formal). For a friend ('Tum'), use 'Du'.",
+                "explanation": "'Du' is the informal 'You'.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_pro_3",
+                "type": "fill_blank",
+                "question": "___ sind Freunde. (We are friends)",
+                "options": [
+                    "Wir",
+                    "Ihr",
+                    "Sie"
+                ],
+                "correct_answer": "Wir",
+                "trap_explanation": "Think of 'We' -> 'W' -> 'Wir'.",
+                "explanation": "'We' is 'Wir'.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_pro_4",
+                "type": "multiple_choice",
+                "question": "Which word means 'She'?",
+                "options": [
+                    "Er",
+                    "Sie",
+                    "Es"
+                ],
+                "correct_answer": "Sie",
+                "trap_explanation": "TRAP! 'Sie' can mean She, They, or You (Formal). Here, it means She.",
+                "explanation": "'Sie' (lowercase s usually, but Capital at start) means She.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_pro_5",
+                "type": "true_false",
+                "question": "'Ihr' means 'You all' (Tum sab).",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "True",
+                "trap_explanation": "Don't confuse 'Ihr' with 'Er' (He). 'Ihr' is plural 'you'.",
+                "explanation": "Correct. 'Ihr' is used when talking to a group of friends.",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "id": "sein",
+        "title": "The Verb 'Sein' (To Be)",
+        "category": "Basics",
+        "order": 3,
+        "description": "I am, You are, He is...",
+        "comparison_hint": {
+            "hindi": "Hindi mein: Main 'hoon', Tum 'ho', Woh 'hai'. German mein bhi verb change hota hai: Ich 'bin', Du 'bist', Er 'ist'.",
+            "english": "The verb 'to be' is irregular. I am, You are, He is -> Ich bin, Du bist, Er ist."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "This is the most important verb! It is irregular, so you must memorize it."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Pronoun",
+                    "Conjugation",
+                    "Meaning"
+                ],
+                "rows": [
+                    [
+                        "Ich",
+                        "bin",
+                        "I am"
+                    ],
+                    [
+                        "Du",
+                        "bist",
+                        "You are"
+                    ],
+                    [
+                        "Er/Sie/Es",
+                        "ist",
+                        "He/She is"
+                    ],
+                    [
+                        "Wir",
+                        "sind",
+                        "We are"
+                    ],
+                    [
+                        "Ihr",
+                        "seid",
+                        "You all are"
+                    ],
+                    [
+                        "Sie/sie",
+                        "sind",
+                        "You/They are"
+                    ]
+                ],
+                "highlight_pattern": "bin|bist|ist|sind|seid"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_sein_1",
+                "type": "fill_blank",
+                "question": "Ich ___ glücklich. (I am happy)",
+                "options": [
+                    "bin",
+                    "bist",
+                    "ist"
+                ],
+                "correct_answer": "bin",
+                "trap_explanation": "Ich goes with 'bin'. Think 'Ich bin' (Main hoon).",
+                "explanation": "Ich bin = I am.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_sein_2",
+                "type": "fill_blank",
+                "question": "Du ___ nett. (You are nice)",
+                "options": [
+                    "bin",
+                    "bist",
+                    "ist"
+                ],
+                "correct_answer": "bist",
+                "trap_explanation": "Du always ends in -st usually. Du bist.",
+                "explanation": "Du bist = You are.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_sein_3",
+                "type": "multiple_choice",
+                "question": "Er ___ mein Bruder. (He is my brother)",
+                "options": [
+                    "bin",
+                    "bist",
+                    "ist"
+                ],
+                "correct_answer": "ist",
+                "trap_explanation": "Er (He) is singular. Er ist.",
+                "explanation": "Er ist = He is.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_sein_4",
+                "type": "fill_blank",
+                "question": "Wir ___ Studenten. (We are students)",
+                "options": [
+                    "sind",
+                    "seid",
+                    "ist"
+                ],
+                "correct_answer": "sind",
+                "trap_explanation": "TRAP! 'Seid' is for 'Ihr' (You all). For 'Wir' (We), use 'sind'.",
+                "explanation": "Wir sind = We are.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_sein_5",
+                "type": "sentence_order",
+                "question": "Arrange: [bin] [Ich] [müde]",
+                "options": [
+                    "Ich",
+                    "bin",
+                    "müde"
+                ],
+                "correct_answer": "Ich bin müde",
+                "trap_explanation": "Verb (bin) must be second. Subject (Ich) first.",
+                "explanation": "Ich bin müde = I am tired.",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "id": "haben",
+        "title": "The Verb 'Haben' (To Have)",
+        "category": "Basics",
+        "order": 4,
+        "description": "I have, You have...",
+        "comparison_hint": {
+            "hindi": "Hindi mein: Mere paas 'hai'. German mein: Ich 'habe'.",
+            "english": "To have. I have, You have -> Ich habe, Du hast."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "Used to say you possess something."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Pronoun",
+                    "Conjugation",
+                    "Meaning"
+                ],
+                "rows": [
+                    [
+                        "Ich",
+                        "habe",
+                        "I have"
+                    ],
+                    [
+                        "Du",
+                        "hast",
+                        "You have"
+                    ],
+                    [
+                        "Er/Sie/Es",
+                        "hat",
+                        "He/She has"
+                    ],
+                    [
+                        "Wir",
+                        "haben",
+                        "We have"
+                    ],
+                    [
+                        "Ihr",
+                        "habt",
+                        "You all have"
+                    ],
+                    [
+                        "Sie/sie",
+                        "haben",
+                        "You/They have"
+                    ]
+                ],
+                "highlight_pattern": "habe|hast|hat|haben|habt"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_hab_1",
+                "type": "fill_blank",
+                "question": "Ich ___ einen Hund. (I have a dog)",
+                "options": [
+                    "habe",
+                    "hast",
+                    "hat"
+                ],
+                "correct_answer": "habe",
+                "trap_explanation": "Ich ends with -e usually. Ich habe.",
+                "explanation": "Ich habe = I have.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_hab_2",
+                "type": "fill_blank",
+                "question": "Du ___ Hunger. (You have hunger/You are hungry)",
+                "options": [
+                    "habe",
+                    "hast",
+                    "hat"
+                ],
+                "correct_answer": "hast",
+                "trap_explanation": "Du ends in -st. Du hast.",
+                "explanation": "Du hast = You have.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_hab_3",
+                "type": "multiple_choice",
+                "question": "Er ___ ein Auto. (He has a car)",
+                "options": [
+                    "habe",
+                    "hast",
+                    "hat"
+                ],
+                "correct_answer": "hat",
+                "trap_explanation": "TRAP! Don't say 'Er habt'. It is 'Er hat'.",
+                "explanation": "Er hat = He has.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_hab_4",
+                "type": "fill_blank",
+                "question": "Wir ___ Zeit. (We have time)",
+                "options": [
+                    "haben",
+                    "habt",
+                    "hat"
+                ],
+                "correct_answer": "haben",
+                "trap_explanation": "Wir form is usually same as infinitive. Wir haben.",
+                "explanation": "Wir haben = We have.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_hab_5",
+                "type": "sentence_order",
+                "question": "Arrange: [Geld] [habe] [Ich]",
+                "options": [
+                    "Ich",
+                    "habe",
+                    "Geld"
+                ],
+                "correct_answer": "Ich habe Geld",
+                "trap_explanation": "Verb (habe) must be in position 2.",
+                "explanation": "Ich habe Geld = I have money.",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "id": "regular_verbs",
+        "title": "Regular Verb Conjugation",
+        "category": "Basics",
+        "order": 5,
+        "description": "The -e, -st, -t, -en rules.",
+        "comparison_hint": {
+            "hindi": "Hindi mein verb 'na' pe khatam hota hai (Bolna, Khana). Hum 'na' hata kar 'ta/te/ti' lagate hain. German mein verb '-en' pe khatam hota hai (Gehen, Machen). Hum '-en' hata kar endings lagate hain (-e, -st, -t).",
+            "english": "Remove '-en' from the verb and add the correct ending."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "Most verbs follow this pattern. Example: Gehen (To go). Stem: Geh-"
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Pronoun",
+                    "Ending",
+                    "Example (Gehen)"
+                ],
+                "rows": [
+                    [
+                        "Ich",
+                        "-e",
+                        "Ich gehe"
+                    ],
+                    [
+                        "Du",
+                        "-st",
+                        "Du gehst"
+                    ],
+                    [
+                        "Er/Sie/Es",
+                        "-t",
+                        "Er geht"
+                    ],
+                    [
+                        "Wir",
+                        "-en",
+                        "Wir gehen"
+                    ],
+                    [
+                        "Ihr",
+                        "-t",
+                        "Ihr geht"
+                    ],
+                    [
+                        "Sie/sie",
+                        "-en",
+                        "Sie gehen"
+                    ]
+                ],
+                "highlight_pattern": "-e|-st|-t|-en"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_reg_1",
+                "type": "fill_blank",
+                "question": "Ich ___ (kommen - to come) aus Indien.",
+                "options": [
+                    "komme",
+                    "kommst",
+                    "kommt"
+                ],
+                "correct_answer": "komme",
+                "trap_explanation": "Ich ending is always -e. Ich komme.",
+                "explanation": "Remove -en, add -e. Ich komme.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_reg_2",
+                "type": "fill_blank",
+                "question": "Du ___ (wohnen - to live) in Berlin.",
+                "options": [
+                    "wohne",
+                    "wohnst",
+                    "wohnt"
+                ],
+                "correct_answer": "wohnst",
+                "trap_explanation": "Du ending is -st. Du wohnst.",
+                "explanation": "Remove -en, add -st. Du wohnst.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_reg_3",
+                "type": "multiple_choice",
+                "question": "Er ___ (trinken - to drink) Wasser.",
+                "options": [
+                    "trinke",
+                    "trinkst",
+                    "trinkt"
+                ],
+                "correct_answer": "trinkt",
+                "trap_explanation": "Er ending is -t. Er trinkt.",
+                "explanation": "Remove -en, add -t. Er trinkt.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_reg_4",
+                "type": "fill_blank",
+                "question": "Wir ___ (lernen - to learn) Deutsch.",
+                "options": [
+                    "lernen",
+                    "lernt",
+                    "lerne"
+                ],
+                "correct_answer": "lernen",
+                "trap_explanation": "Wir form is same as original verb. Wir lernen.",
+                "explanation": "Wir takes -en. Wir lernen.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_reg_5",
+                "type": "true_false",
+                "question": "Ihr (You all) ending is '-t'. (e.g., Ihr macht)",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "True",
+                "trap_explanation": "Don't confuse Ihr (-t) with Wir (-en).",
+                "explanation": "Correct. Ihr macht, Ihr geht.",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "id": "sentence_structure",
+        "title": "Sentence Structure",
+        "category": "Basics",
+        "order": 6,
+        "description": "The Golden Rule: Verb Position 2.",
+        "comparison_hint": {
+            "hindi": "Hindi mein Verb end mein aata hai: 'Main paani peeta hoon' (Subject-Object-Verb). German mein Verb 2nd number pe aata hai: 'Ich trinke Wasser' (Subject-Verb-Object).",
+            "english": "In a regular statement, the VERB is always in position 2."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "The most important rule in German: The conjugated verb comes 2nd."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Pos 1",
+                    "Pos 2 (Verb)",
+                    "Pos 3"
+                ],
+                "rows": [
+                    [
+                        "Ich",
+                        "trinke",
+                        "Wasser"
+                    ],
+                    [
+                        "Heute",
+                        "trinke",
+                        "ich Wasser"
+                    ],
+                    [
+                        "Wir",
+                        "gehen",
+                        "nach Hause"
+                    ]
+                ],
+                "highlight_pattern": "trinke|gehen"
+            },
+            {
+                "type": "tip",
+                "content": "Even if you start with 'Heute' (Today), the verb must stay 2nd! So 'Ich' moves to 3rd."
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_sen_1",
+                "type": "sentence_order",
+                "question": "Arrange: [wohne] [Ich] [in Berlin]",
+                "options": [
+                    "Ich",
+                    "wohne",
+                    "in Berlin"
+                ],
+                "correct_answer": "Ich wohne in Berlin",
+                "trap_explanation": "Subject (Ich) -> Verb (wohne) -> Rest.",
+                "explanation": "Standard structure: Subject-Verb-Object.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_sen_2",
+                "type": "sentence_order",
+                "question": "Arrange: [ist] [Das] [gut]",
+                "options": [
+                    "Das",
+                    "ist",
+                    "gut"
+                ],
+                "correct_answer": "Das ist gut",
+                "trap_explanation": "Verb (ist) must be 2nd.",
+                "explanation": "Das ist gut = That is good.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_sen_3",
+                "type": "multiple_choice",
+                "question": "Which is correct? 'Heute ich gehe' OR 'Heute gehe ich'?",
+                "options": [
+                    "Heute ich gehe",
+                    "Heute gehe ich"
+                ],
+                "correct_answer": "Heute gehe ich",
+                "trap_explanation": "TRAP! In English/Hindi you say 'Today I go'. In German, Verb MUST be 2nd. So 'Heute' (1) -> 'gehe' (2) -> 'ich' (3).",
+                "explanation": "Verb must be in position 2. If 'Heute' is 1st, Verb is 2nd, Subject is 3rd.",
+                "difficulty": "hard"
+            },
+            {
+                "id": "q_sen_4",
+                "type": "sentence_order",
+                "question": "Question: [du] [Kommst] [?]",
+                "options": [
+                    "Kommst",
+                    "du",
+                    "?"
+                ],
+                "correct_answer": "Kommst du ?",
+                "trap_explanation": "For Yes/No questions, Verb comes 1st!",
+                "explanation": "Yes/No questions start with the Verb. Kommst du? (Do you come?)",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_sen_5",
+                "type": "true_false",
+                "question": "In a normal sentence, the verb is always at the end.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "False",
+                "trap_explanation": "That's Hindi! In German, it's 2nd.",
+                "explanation": "False. In a normal sentence, the verb is in Position 2.",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "id": "negation",
+        "title": "Negation (Nicht vs Kein)",
+        "category": "Sentence Structure",
+        "order": 7,
+        "description": "How to say 'No' or 'Not'.",
+        "comparison_hint": {
+            "hindi": "Hindi mein hum sirf 'Nahi' bolte hain. German mein 2 words hain: 'Kein' (Koi nahi - for nouns) aur 'Nicht' (Nahi - for verbs/adjectives).",
+            "english": "Use 'Kein' for nouns that have 'a/an' (ein/eine). Use 'Nicht' for everything else (verbs, adjectives, 'the' nouns)."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "The Rule: If you negate a Noun with 'Ein/Eine' or no article, use 'Kein'. For everything else, use 'Nicht'."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Type",
+                    "German",
+                    "English"
+                ],
+                "rows": [
+                    [
+                        "Noun (Ein)",
+                        "Ich habe KEIN Geld.",
+                        "I have NO money."
+                    ],
+                    [
+                        "Verb",
+                        "Ich schlafe NICHT.",
+                        "I am NOT sleeping."
+                    ],
+                    [
+                        "Adjective",
+                        "Er ist NICHT groß.",
+                        "He is NOT tall."
+                    ],
+                    [
+                        "Specific Noun",
+                        "Das ist NICHT mein Auto.",
+                        "That is NOT my car."
+                    ]
+                ],
+                "highlight_pattern": "KEIN|NICHT"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_neg_1",
+                "type": "fill_blank",
+                "question": "Ich habe ___ Zeit. (I have no time)",
+                "options": [
+                    "nicht",
+                    "kein",
+                    "keine"
+                ],
+                "correct_answer": "keine",
+                "trap_explanation": "Zeit is feminine (Die Zeit), so Kein becomes Keine.",
+                "explanation": "Zeit is a noun without 'the'. So we use Kein. Feminine -> Keine.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_neg_2",
+                "type": "fill_blank",
+                "question": "Das ist ___ gut. (That is not good)",
+                "options": [
+                    "nicht",
+                    "kein"
+                ],
+                "correct_answer": "nicht",
+                "trap_explanation": "Good (gut) is an adjective, not a noun.",
+                "explanation": "For adjectives, we always use 'nicht'.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_neg_3",
+                "type": "fill_blank",
+                "question": "Ich esse ___ Apfel. (I am not eating an apple)",
+                "options": [
+                    "nicht",
+                    "keinen"
+                ],
+                "correct_answer": "keinen",
+                "trap_explanation": "Apfel is a noun. Accusative Masculine -> Keinen.",
+                "explanation": "We negate the noun 'Apfel'. Masculine Accusative -> Keinen.",
+                "difficulty": "hard"
+            },
+            {
+                "id": "q_neg_4",
+                "type": "multiple_choice",
+                "question": "Er kommt ___. (He is not coming)",
+                "options": [
+                    "nicht",
+                    "kein"
+                ],
+                "correct_answer": "nicht",
+                "trap_explanation": "Coming is a verb action.",
+                "explanation": "Negating a verb -> nicht.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_neg_5",
+                "type": "true_false",
+                "question": "'Kein' is only used for Nouns.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "True",
+                "trap_explanation": "You can't say 'Ich kein schlafe'.",
+                "explanation": "Correct. Kein is like 'no' + noun (No money, no friends).",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "id": "possessive",
+        "title": "Possessive Pronouns",
+        "category": "Sentence Structure",
+        "order": 8,
+        "description": "My, Your, His, Her...",
+        "comparison_hint": {
+            "hindi": "Mera (Mein), Tera (Dein), Uska (Sein/Ihr). Hindi mein gender cheez ka hota hai (Mera bhai, Meri behen). German mein bhi same hai!",
+            "english": "Words like My, Your, His. They change ending based on the gender of the thing you possess."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "These words show ownership."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Person",
+                    "Possessive (M/N)",
+                    "Possessive (F/Pl)"
+                ],
+                "rows": [
+                    [
+                        "Ich (I)",
+                        "Mein",
+                        "Meine"
+                    ],
+                    [
+                        "Du (You)",
+                        "Dein",
+                        "Deine"
+                    ],
+                    [
+                        "Er (He)",
+                        "Sein",
+                        "Seine"
+                    ],
+                    [
+                        "Sie (She)",
+                        "Ihr",
+                        "Ihre"
+                    ],
+                    [
+                        "Wir (We)",
+                        "Unser",
+                        "Unsere"
+                    ]
+                ],
+                "highlight_pattern": "Mein|Dein|Sein|Ihr|Unser|Meine|Deine|Seine|Ihre|Unsere"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_poss_1",
+                "type": "fill_blank",
+                "question": "Das ist ___ (my) Vater.",
+                "options": [
+                    "mein",
+                    "meine"
+                ],
+                "correct_answer": "mein",
+                "trap_explanation": "Vater is Masculine (Der). So no 'e' at end.",
+                "explanation": "Masculine/Neuter -> Mein.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_poss_2",
+                "type": "fill_blank",
+                "question": "Das ist ___ (my) Mutter.",
+                "options": [
+                    "mein",
+                    "meine"
+                ],
+                "correct_answer": "meine",
+                "trap_explanation": "Mutter is Feminine (Die). Needs 'e' at end.",
+                "explanation": "Feminine/Plural -> Meine.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_poss_3",
+                "type": "multiple_choice",
+                "question": "Ist das ___ (your) Buch?",
+                "options": [
+                    "dein",
+                    "deine"
+                ],
+                "correct_answer": "dein",
+                "trap_explanation": "Buch is Neuter (Das Buch).",
+                "explanation": "Neuter -> Dein.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_poss_4",
+                "type": "fill_blank",
+                "question": "Er liebt ___ (his) Frau.",
+                "options": [
+                    "sein",
+                    "seine"
+                ],
+                "correct_answer": "seine",
+                "trap_explanation": "Frau is Feminine. His -> Sein + e -> Seine.",
+                "explanation": "Feminine object -> Seine.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_poss_5",
+                "type": "true_false",
+                "question": "'Ihr' can mean 'Her' AND 'Their'.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "True",
+                "trap_explanation": "Confusing, but true!",
+                "explanation": "Yes, Ihr means Her, Their, and Your (Formal). Context tells you which.",
+                "difficulty": "hard"
+            }
+        ]
+    },
+    {
+        "id": "w_questions",
+        "title": "W-Questions",
+        "category": "Sentence Structure",
+        "order": 9,
+        "description": "Who, What, Where, When...",
+        "comparison_hint": {
+            "hindi": "Kab (Wann), Kahan (Wo), Kya (Was), Kaun (Wer). Hindi mein W-word aksar beech mein aata hai ('Tum KAHAN ja rahe ho?'). German mein W-word hamesha start mein aata hai ('WO gehst du hin?').",
+            "english": "Questions starting with W. Structure: W-Word + Verb + Subject?"
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "Start with the W-word, then the Verb."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "German",
+                    "English",
+                    "Hindi"
+                ],
+                "rows": [
+                    [
+                        "Was",
+                        "What",
+                        "Kya"
+                    ],
+                    [
+                        "Wer",
+                        "Who",
+                        "Kaun"
+                    ],
+                    [
+                        "Wo",
+                        "Where",
+                        "Kahan"
+                    ],
+                    [
+                        "Wann",
+                        "When",
+                        "Kab"
+                    ],
+                    [
+                        "Wie",
+                        "How",
+                        "Kaise"
+                    ],
+                    [
+                        "Warum",
+                        "Why",
+                        "Kyun"
+                    ]
+                ],
+                "highlight_pattern": "Was|Wer|Wo|Wann|Wie|Warum"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_wq_1",
+                "type": "fill_blank",
+                "question": "___ heißt du? (What is your name?)",
+                "options": [
+                    "Was",
+                    "Wie",
+                    "Wo"
+                ],
+                "correct_answer": "Wie",
+                "trap_explanation": "TRAP! In English we say 'WHAT is your name', but German says 'HOW (Wie) are you called'.",
+                "explanation": "We say 'Wie heißt du' (How are you called).",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_wq_2",
+                "type": "fill_blank",
+                "question": "___ wohnst du? (Where do you live?)",
+                "options": [
+                    "Wo",
+                    "Wohin",
+                    "Was"
+                ],
+                "correct_answer": "Wo",
+                "trap_explanation": "Wo = Where (Location).",
+                "explanation": "Wo = Where.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_wq_3",
+                "type": "fill_blank",
+                "question": "___ ist das? (Who is that?)",
+                "options": [
+                    "Wer",
+                    "Wo",
+                    "Was"
+                ],
+                "correct_answer": "Wer",
+                "trap_explanation": "Don't confuse Wer (Who) with Where!",
+                "explanation": "Wer = Who.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_wq_4",
+                "type": "sentence_order",
+                "question": "Arrange: [alt] [bist] [Wie] [du] [?]",
+                "options": [
+                    "Wie",
+                    "alt",
+                    "bist",
+                    "du",
+                    "?"
+                ],
+                "correct_answer": "Wie alt bist du ?",
+                "trap_explanation": "W-word (Wie alt) -> Verb (bist) -> Subject (du).",
+                "explanation": "Wie alt bist du? = How old are you?",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_wq_5",
+                "type": "multiple_choice",
+                "question": "___ kommst du? (When do you come?)",
+                "options": [
+                    "Wann",
+                    "Wo",
+                    "Wer"
+                ],
+                "correct_answer": "Wann",
+                "trap_explanation": "Wann = When.",
+                "explanation": "Wann = When.",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "id": "adjectives",
+        "title": "Adjectives (Basics)",
+        "category": "Sentence Structure",
+        "order": 10,
+        "description": "Describing things (Good, Bad, Big).",
+        "comparison_hint": {
+            "hindi": "Visheshan. 'Achha' ladka, 'Badi' gaadi. German mein agar adjective verb ke baad aaye (The car is red), toh change nahi hota. Agar noun se pehle aaye (The red car), toh ending lagti hai.",
+            "english": "If it comes AFTER 'is/are', it doesn't change! (Das Auto ist rot). Simple."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "For now, we focus on Predicative Adjectives (after 'is'). They never change form!"
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "German",
+                    "English",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Gut",
+                        "Good",
+                        "Das ist gut."
+                    ],
+                    [
+                        "Schlecht",
+                        "Bad",
+                        "Das ist schlecht."
+                    ],
+                    [
+                        "Groß",
+                        "Big/Tall",
+                        "Er ist groß."
+                    ],
+                    [
+                        "Klein",
+                        "Small",
+                        "Sie ist klein."
+                    ],
+                    [
+                        "Schön",
+                        "Beautiful",
+                        "Du bist schön."
+                    ]
+                ],
+                "highlight_pattern": "Gut|Schlecht|Groß|Klein|Schön"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_adj_1",
+                "type": "fill_blank",
+                "question": "Der Mann ist ___ (old).",
+                "options": [
+                    "alt",
+                    "alte",
+                    "alten"
+                ],
+                "correct_answer": "alt",
+                "trap_explanation": "After 'ist', no ending needed!",
+                "explanation": "Predicative adjective (after verb) has no ending.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_adj_2",
+                "type": "multiple_choice",
+                "question": "Das Haus ist ___ (small).",
+                "options": [
+                    "klein",
+                    "kleine"
+                ],
+                "correct_answer": "klein",
+                "trap_explanation": "No ending after 'ist'.",
+                "explanation": "Das Haus ist klein.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_adj_3",
+                "type": "fill_blank",
+                "question": "Die Frau ist ___ (beautiful).",
+                "options": [
+                    "schön",
+                    "schöne"
+                ],
+                "correct_answer": "schön",
+                "trap_explanation": "Even for Feminine subject, if it's after 'ist', no ending.",
+                "explanation": "Die Frau ist schön.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_adj_4",
+                "type": "true_false",
+                "question": "Adjectives change endings when they come BEFORE a noun (e.g., Ein guter Mann).",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "True",
+                "trap_explanation": "This is advanced, but true. We will learn this later.",
+                "explanation": "Correct. Attributive adjectives need endings.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_adj_5",
+                "type": "sentence_order",
+                "question": "Arrange: [ist] [sehr] [Der Film] [gut]",
+                "options": [
+                    "Der Film",
+                    "ist",
+                    "sehr",
+                    "gut"
+                ],
+                "correct_answer": "Der Film ist sehr gut",
+                "trap_explanation": "Subject -> Verb -> Adverb -> Adjective.",
+                "explanation": "Der Film ist sehr gut (The movie is very good).",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "id": "word_order_2",
+        "title": "Word Order II (Time & Inversion)",
+        "category": "Sentence Structure",
+        "order": 11,
+        "description": "Starting sentences with Time.",
+        "comparison_hint": {
+            "hindi": "Agar hum sentence 'Aaj' (Today) se shuru karein, toh Hindi mein order same rehta hai ('Aaj main ja raha hoon'). German mein Verb ko 2nd hi rehna hai, toh Subject 3rd pe chala jaata hai ('Aaj ja raha hoon main').",
+            "english": "Inversion: If you start with Time (Heute), the Verb stays 2nd, so the Subject moves to 3rd."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "Standard: Ich gehe heute. (I go today)\nInversion: Heute gehe ich. (Today go I)"
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Position 1",
+                    "Position 2 (Verb)",
+                    "Position 3 (Subj)"
+                ],
+                "rows": [
+                    [
+                        "Ich",
+                        "spiele",
+                        "heute Fußball."
+                    ],
+                    [
+                        "Heute",
+                        "spiele",
+                        "ich Fußball."
+                    ],
+                    [
+                        "Morgen",
+                        "kommen",
+                        "wir."
+                    ]
+                ],
+                "highlight_pattern": "spiele|kommen"
+            },
+            {
+                "type": "tip",
+                "content": "Time usually comes before Place. (TeKaMoLo - Wann before Wo)."
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_wo2_1",
+                "type": "sentence_order",
+                "question": "Arrange: [gehe] [Heute] [ich] [ins Kino]",
+                "options": [
+                    "Heute",
+                    "gehe",
+                    "ich",
+                    "ins Kino"
+                ],
+                "correct_answer": "Heute gehe ich ins Kino",
+                "trap_explanation": "Start with Heute. Verb (gehe) MUST be 2nd.",
+                "explanation": "Heute gehe ich... (Today go I...)",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_wo2_2",
+                "type": "multiple_choice",
+                "question": "Which is correct?",
+                "options": [
+                    "Morgen wir kommen",
+                    "Morgen kommen wir"
+                ],
+                "correct_answer": "Morgen kommen wir",
+                "trap_explanation": "Verb must be 2nd. 'Morgen' is pos 1.",
+                "explanation": "Morgen (1) kommen (2) wir (3).",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_wo2_3",
+                "type": "fill_blank",
+                "question": "Jetzt ___ (sleep) ich.",
+                "options": [
+                    "schlafe",
+                    "schläfst"
+                ],
+                "correct_answer": "schlafe",
+                "trap_explanation": "Subject is 'ich' (even if it's 3rd), so verb conjugation matches 'ich'.",
+                "explanation": "Ich schlafe -> Jetzt schlafe ich.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_wo2_4",
+                "type": "true_false",
+                "question": "The Subject is ALWAYS the first word.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "False",
+                "trap_explanation": "No! Subject can be 1st or 3rd.",
+                "explanation": "False. If you start with Time, Subject is 3rd.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_wo2_5",
+                "type": "sentence_order",
+                "question": "Arrange: [nach Berlin] [fahre] [Ich] [morgen]",
+                "options": [
+                    "Ich",
+                    "fahre",
+                    "morgen",
+                    "nach Berlin"
+                ],
+                "correct_answer": "Ich fahre morgen nach Berlin",
+                "trap_explanation": "Time (morgen) comes before Place (nach Berlin).",
+                "explanation": "Time before Place.",
+                "difficulty": "hard"
+            }
+        ]
+    },
+    {
+        "id": "nom_acc",
+        "title": "Nominative vs Accusative",
+        "category": "Cases & Time",
+        "order": 12,
+        "description": "Subject vs Object (Der -> Den).",
+        "comparison_hint": {
+            "hindi": "Hindi mein: 'Ram (Subject) ne Seb (Object) ko khaya'. German mein Subject 'Nominative' hota hai aur Object 'Accusative' hota hai. Sirf Masculine (Der) change hota hai 'Den' mein. Baaki same rehte hain.",
+            "english": "Subject = Nominative. Object = Accusative. Only Masculine 'Der' changes to 'Den'. Die/Das stay same."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "The Subject does the action. The Object receives the action. In German, if the Object is Masculine, 'Der' becomes 'Den'."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Gender",
+                    "Nominative (Subj)",
+                    "Accusative (Obj)"
+                ],
+                "rows": [
+                    [
+                        "Masculine",
+                        "Der Mann",
+                        "DEN Mann"
+                    ],
+                    [
+                        "Feminine",
+                        "Die Frau",
+                        "Die Frau (No Change)"
+                    ],
+                    [
+                        "Neuter",
+                        "Das Kind",
+                        "Das Kind (No Change)"
+                    ],
+                    [
+                        "Plural",
+                        "Die Kinder",
+                        "Die Kinder (No Change)"
+                    ]
+                ],
+                "highlight_pattern": "Der|Den|Die|Das"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_acc_1",
+                "type": "fill_blank",
+                "question": "Ich habe ___ (the) Ball.",
+                "options": [
+                    "der",
+                    "den",
+                    "das"
+                ],
+                "correct_answer": "den",
+                "trap_explanation": "Ball is Masculine (Der Ball). Here it is the Object (I have IT). So Der -> Den.",
+                "explanation": "I have the ball. Ball is the object. Der Ball -> Den Ball.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_acc_2",
+                "type": "fill_blank",
+                "question": "Ich sehe ___ (the) Frau.",
+                "options": [
+                    "die",
+                    "den"
+                ],
+                "correct_answer": "die",
+                "trap_explanation": "Feminine (Die) does NOT change in Accusative.",
+                "explanation": "Die Frau stays Die Frau.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_acc_3",
+                "type": "multiple_choice",
+                "question": "Er isst ___ (the) Apfel.",
+                "options": [
+                    "der",
+                    "den",
+                    "das"
+                ],
+                "correct_answer": "den",
+                "trap_explanation": "Apfel is Der Apfel. Object -> Den Apfel.",
+                "explanation": "Der Apfel becomes Den Apfel in Accusative.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_acc_4",
+                "type": "fill_blank",
+                "question": "Wir kaufen ___ (the) Auto.",
+                "options": [
+                    "das",
+                    "den"
+                ],
+                "correct_answer": "das",
+                "trap_explanation": "Auto is Das Auto. Neuter does not change.",
+                "explanation": "Das Auto stays Das Auto.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_acc_5",
+                "type": "true_false",
+                "question": "Only Masculine (Der) changes in Accusative.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "True",
+                "trap_explanation": "Die and Das stay the same.",
+                "explanation": "Correct. Only Der becomes Den.",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "id": "possessive_acc",
+        "title": "Possessive Articles (Accusative)",
+        "category": "Cases & Time",
+        "order": 13,
+        "description": "My, Your... as Objects.",
+        "comparison_hint": {
+            "hindi": "Jaise 'Der' -> 'Den' banta hai, waise hi 'Mein' -> 'Meinen' banta hai (sirf Masculine ke liye).",
+            "english": "Just like Der -> Den, Mein -> Meinen, Dein -> Deinen (Only for Masculine Objects)."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "If you possess a Masculine Object, add '-en' to the possessive word."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Gender",
+                    "Nominative",
+                    "Accusative"
+                ],
+                "rows": [
+                    [
+                        "Masculine",
+                        "Mein Vater",
+                        "MEINEN Vater"
+                    ],
+                    [
+                        "Feminine",
+                        "Meine Mutter",
+                        "Meine Mutter"
+                    ],
+                    [
+                        "Neuter",
+                        "Mein Kind",
+                        "Mein Kind"
+                    ],
+                    [
+                        "Plural",
+                        "Meine Kinder",
+                        "Meine Kinder"
+                    ]
+                ],
+                "highlight_pattern": "Mein|Meinen|Meine"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_poss_acc_1",
+                "type": "fill_blank",
+                "question": "Ich liebe ___ (my) Vater.",
+                "options": [
+                    "mein",
+                    "meinen"
+                ],
+                "correct_answer": "meinen",
+                "trap_explanation": "Vater is Masculine. Object -> Meinen.",
+                "explanation": "I love my father. Father is object. Mein -> Meinen.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_poss_acc_2",
+                "type": "fill_blank",
+                "question": "Ich suche ___ (my) Tasche (Bag - Fem).",
+                "options": [
+                    "meine",
+                    "meinen"
+                ],
+                "correct_answer": "meine",
+                "trap_explanation": "Feminine objects don't take -en.",
+                "explanation": "Die Tasche -> Meine Tasche (No change).",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_poss_acc_3",
+                "type": "multiple_choice",
+                "question": "Er hat ___ (his) Hund (Dog - Masc).",
+                "options": [
+                    "sein",
+                    "seinen"
+                ],
+                "correct_answer": "seinen",
+                "trap_explanation": "Hund is Masculine Object. Sein -> Seinen.",
+                "explanation": "Der Hund -> Seinen Hund.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_poss_acc_4",
+                "type": "fill_blank",
+                "question": "Wir trinken ___ (our) Wasser (Neuter).",
+                "options": [
+                    "unser",
+                    "unseren"
+                ],
+                "correct_answer": "unser",
+                "trap_explanation": "Neuter (Das) doesn't change.",
+                "explanation": "Das Wasser -> Unser Wasser.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_poss_acc_5",
+                "type": "true_false",
+                "question": "For Plural objects, we add -en (e.g., Meinen Bücher).",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "False",
+                "trap_explanation": "Plural uses 'Meine'. Only Singular Masculine uses -en.",
+                "explanation": "False. Plural is Meine.",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "id": "prepositions_acc",
+        "title": "Prepositions (Accusative)",
+        "category": "Cases & Time",
+        "order": 14,
+        "description": "Für, Ohne, Gegen, Um, Durch.",
+        "comparison_hint": {
+            "hindi": "Kuch words ke baad hamesha Accusative aata hai. Yaad rakho 'FUDOG': Für, Um, Durch, Ohne, Gegen.",
+            "english": "After these prepositions, ALWAYS use Accusative (Den/Meinen/Dich etc.). Mnemonic: FUDOG."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "FUDOG: Für (For), Um (Around/At), Durch (Through), Ohne (Without), Gegen (Against)."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Preposition",
+                    "Meaning",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Für",
+                        "For",
+                        "Für DICH (For you)"
+                    ],
+                    [
+                        "Ohne",
+                        "Without",
+                        "Ohne MICH (Without me)"
+                    ],
+                    [
+                        "Gegen",
+                        "Against",
+                        "Gegen DEN Mann"
+                    ],
+                    [
+                        "Um",
+                        "Around/At",
+                        "Um 8 Uhr"
+                    ],
+                    [
+                        "Durch",
+                        "Through",
+                        "Durch DEN Park"
+                    ]
+                ],
+                "highlight_pattern": "Für|Ohne|Gegen|Um|Durch"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_prep_1",
+                "type": "fill_blank",
+                "question": "Das Geschenk ist für ___ (you).",
+                "options": [
+                    "dich",
+                    "du",
+                    "dir"
+                ],
+                "correct_answer": "dich",
+                "trap_explanation": "Für is always Accusative. Du -> Dich.",
+                "explanation": "Für takes Accusative. Du becomes Dich.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_prep_2",
+                "type": "fill_blank",
+                "question": "Ich gehe ohne ___ (him).",
+                "options": [
+                    "er",
+                    "ihn",
+                    "ihm"
+                ],
+                "correct_answer": "ihn",
+                "trap_explanation": "Ohne is Accusative. Er -> Ihn.",
+                "explanation": "Ohne takes Accusative. Er becomes Ihn.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_prep_3",
+                "type": "multiple_choice",
+                "question": "Wir gehen durch ___ (the) Park (Masc).",
+                "options": [
+                    "der",
+                    "den",
+                    "dem"
+                ],
+                "correct_answer": "den",
+                "trap_explanation": "Durch is Accusative. Der Park -> Den Park.",
+                "explanation": "Durch takes Accusative. Der -> Den.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_prep_4",
+                "type": "fill_blank",
+                "question": "Das ist gegen ___ (the) Regeln (Plural).",
+                "options": [
+                    "die",
+                    "den"
+                ],
+                "correct_answer": "die",
+                "trap_explanation": "Plural Accusative is Die.",
+                "explanation": "Gegen takes Accusative. Plural Die stays Die.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_prep_5",
+                "type": "true_false",
+                "question": "'Mit' (With) is an Accusative preposition.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "False",
+                "trap_explanation": "No! Mit is Dative (we learn later). FUDOG are Accusative.",
+                "explanation": "False. Mit is not in FUDOG.",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "id": "word_order_3",
+        "title": "Word Order III (TeKaMoLo)",
+        "category": "Cases & Time",
+        "order": 15,
+        "description": "Time before Place.",
+        "comparison_hint": {
+            "hindi": "German mein sentence ka order fix hota hai: Pehle Time (Kab?), fir Manner (Kaise?), fir Place (Kahan?). Yaad rakho 'TeKaMoLo'.",
+            "english": "TeKaMoLo: Temporal (Time), Kausal (Why), Modal (How), Lokal (Place). Time usually comes before Place."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "Rule: Time comes before Place."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Subject",
+                    "Verb",
+                    "Time",
+                    "Place"
+                ],
+                "rows": [
+                    [
+                        "Ich",
+                        "fahre",
+                        "heute",
+                        "nach Berlin."
+                    ],
+                    [
+                        "Wir",
+                        "gehen",
+                        "um 8 Uhr",
+                        "ins Kino."
+                    ],
+                    [
+                        "Er",
+                        "kommt",
+                        "morgen",
+                        "nach Hause."
+                    ]
+                ],
+                "highlight_pattern": "heute|morgen|nach"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_wo3_1",
+                "type": "sentence_order",
+                "question": "Arrange: [Ich] [nach Deutschland] [fliege] [morgen]",
+                "options": [
+                    "Ich",
+                    "fliege",
+                    "morgen",
+                    "nach Deutschland"
+                ],
+                "correct_answer": "Ich fliege morgen nach Deutschland",
+                "trap_explanation": "Time (morgen) before Place (nach Deutschland).",
+                "explanation": "Time before Place.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_wo3_2",
+                "type": "multiple_choice",
+                "question": "Which is correct?",
+                "options": [
+                    "Ich gehe zur Schule heute.",
+                    "Ich gehe heute zur Schule."
+                ],
+                "correct_answer": "Ich gehe heute zur Schule.",
+                "trap_explanation": "Time (heute) must come before Place (zur Schule).",
+                "explanation": "Time before Place.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_wo3_3",
+                "type": "sentence_order",
+                "question": "Arrange: [Wir] [im Park] [spielen] [am Sonntag]",
+                "options": [
+                    "Wir",
+                    "spielen",
+                    "am Sonntag",
+                    "im Park"
+                ],
+                "correct_answer": "Wir spielen am Sonntag im Park",
+                "trap_explanation": "Time (am Sonntag) before Place (im Park).",
+                "explanation": "Time before Place.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_wo3_4",
+                "type": "true_false",
+                "question": "Place usually comes before Time.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "False",
+                "trap_explanation": "No, Time comes first.",
+                "explanation": "False. Time comes before Place.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_wo3_5",
+                "type": "fill_blank",
+                "question": "Er kommt ___ (today) hierher.",
+                "options": [
+                    "heute",
+                    "morgen"
+                ],
+                "correct_answer": "heute",
+                "trap_explanation": "Just vocab check.",
+                "explanation": "Heute = Today.",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "id": "time_date",
+        "title": "Time & Date",
+        "category": "Cases & Time",
+        "order": 16,
+        "description": "Uhrzeit, Days, Months.",
+        "comparison_hint": {
+            "hindi": "Time batane ke liye 'Es ist ... Uhr'. Days ke saath 'Am' (On) lagta hai. Months ke saath 'Im' (In) lagta hai.",
+            "english": "It is ... o'clock = Es ist ... Uhr. On Monday = Am Montag. In July = Im Juli."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "Use 'Am' for Days/Dates. Use 'Im' for Months/Seasons. Use 'Um' for specific Time."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Preposition",
+                    "Usage",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Um",
+                        "Time (At)",
+                        "Um 8 Uhr (At 8 o'clock)"
+                    ],
+                    [
+                        "Am",
+                        "Days/Dates (On)",
+                        "Am Montag (On Monday)"
+                    ],
+                    [
+                        "Im",
+                        "Months (In)",
+                        "Im Juli (In July)"
+                    ]
+                ],
+                "highlight_pattern": "Um|Am|Im"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_time_1",
+                "type": "fill_blank",
+                "question": "Der Zug kommt ___ 9 Uhr.",
+                "options": [
+                    "um",
+                    "am",
+                    "im"
+                ],
+                "correct_answer": "um",
+                "trap_explanation": "For clock time, use 'Um'.",
+                "explanation": "Um 9 Uhr.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_time_2",
+                "type": "fill_blank",
+                "question": "Ich komme ___ Montag.",
+                "options": [
+                    "am",
+                    "um",
+                    "im"
+                ],
+                "correct_answer": "am",
+                "trap_explanation": "For days, use 'Am'.",
+                "explanation": "Am Montag.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_time_3",
+                "type": "fill_blank",
+                "question": "Mein Geburtstag ist ___ Januar.",
+                "options": [
+                    "im",
+                    "am",
+                    "um"
+                ],
+                "correct_answer": "im",
+                "trap_explanation": "For months, use 'Im'.",
+                "explanation": "Im Januar.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_time_4",
+                "type": "multiple_choice",
+                "question": "Wie spät ist es? (What time is it?)",
+                "options": [
+                    "Es ist 3 Uhr.",
+                    "Ich bin 3 Uhr."
+                ],
+                "correct_answer": "Es ist 3 Uhr.",
+                "trap_explanation": "Use 'Es ist' for time.",
+                "explanation": "Es ist ... Uhr.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_time_5",
+                "type": "sentence_order",
+                "question": "Arrange: [um] [Ich] [auf] [stehe] [7 Uhr]",
+                "options": [
+                    "Ich",
+                    "stehe",
+                    "um",
+                    "7 Uhr",
+                    "auf"
+                ],
+                "correct_answer": "Ich stehe um 7 Uhr auf",
+                "trap_explanation": "Separable verb 'aufstehen'. 'auf' goes to end.",
+                "explanation": "Ich stehe ... auf.",
+                "difficulty": "hard"
+            }
+        ]
+    },
+    {
+        "id": "modal_verbs",
+        "title": "Modal Verbs",
+        "category": "Advanced A1",
+        "order": 17,
+        "description": "Can, Must, Want (Können, Müssen, Wollen).",
+        "comparison_hint": {
+            "hindi": "Hindi mein: 'Main ja sakta hoon' (Can), 'Mujhe jana chahiye' (Should). German mein Modal Verb 2nd position pe aata hai, aur Main Verb sentence ke END mein chala jaata hai. Isse 'Sandwich Rule' kehte hain.",
+            "english": "Modal Verb comes 2nd. The Main Verb goes to the very END. (I CAN football PLAY)."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "Important Modals: Können (Can), Müssen (Must), Wollen (Want), Dürfen (Allowed), Sollen (Should), Mögen (Like)."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Modal",
+                    "Meaning",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Können",
+                        "Can",
+                        "Ich KANN schwimmen."
+                    ],
+                    [
+                        "Müssen",
+                        "Must",
+                        "Ich MUSS gehen."
+                    ],
+                    [
+                        "Wollen",
+                        "Want",
+                        "Ich WILL schlafen."
+                    ],
+                    [
+                        "Dürfen",
+                        "Allowed",
+                        "Darf ich hier essen?"
+                    ],
+                    [
+                        "Sollen",
+                        "Should",
+                        "Du SOLLST lernen."
+                    ]
+                ],
+                "highlight_pattern": "KANN|MUSS|WILL|Darf|SOLLST"
+            },
+            {
+                "type": "tip",
+                "content": "Notice: Ich and Er/Sie/Es forms are usually the same for Modals! (Ich kann, Er kann)."
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_mod_1",
+                "type": "sentence_order",
+                "question": "Arrange: [kann] [Ich] [spielen] [Fußball]",
+                "options": [
+                    "Ich",
+                    "kann",
+                    "Fußball",
+                    "spielen"
+                ],
+                "correct_answer": "Ich kann Fußball spielen",
+                "trap_explanation": "Modal (kann) 2nd. Main verb (spielen) at END.",
+                "explanation": "Ich kann ... spielen.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_mod_2",
+                "type": "fill_blank",
+                "question": "Wir ___ (must) lernen.",
+                "options": [
+                    "müssen",
+                    "muss",
+                    "musst"
+                ],
+                "correct_answer": "müssen",
+                "trap_explanation": "Wir form is same as infinitive. Wir müssen.",
+                "explanation": "Wir müssen lernen.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_mod_3",
+                "type": "fill_blank",
+                "question": "Er ___ (wants) Wasser trinken.",
+                "options": [
+                    "will",
+                    "wollen",
+                    "wollt"
+                ],
+                "correct_answer": "will",
+                "trap_explanation": "Ich will, Er will. (Irregular).",
+                "explanation": "Er will.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_mod_4",
+                "type": "true_false",
+                "question": "The main verb comes immediately after the modal verb.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "False",
+                "trap_explanation": "No! Main verb goes to the END.",
+                "explanation": "False. Main verb goes to the end.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_mod_5",
+                "type": "multiple_choice",
+                "question": "Darf ich hier ___? (smoke)",
+                "options": [
+                    "rauchen",
+                    "rauche",
+                    "rauchst"
+                ],
+                "correct_answer": "rauchen",
+                "trap_explanation": "Main verb at end must be Infinitive (Original form).",
+                "explanation": "Rauchen (Infinitive).",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "id": "imperative",
+        "title": "Imperative (Commands)",
+        "category": "Advanced A1",
+        "order": 18,
+        "description": "Giving orders: Go! Eat! Sleep!",
+        "comparison_hint": {
+            "hindi": "Aadesh dena. 'Jao!', 'Khao!'. German mein 3 tareeke hain: 'Du' (Tu), 'Ihr' (Tum log), 'Sie' (Aap).",
+            "english": "Commands. Du form: Drop 'st' and 'du'. Ihr form: Keep 't', drop 'ihr'. Sie form: Swap Verb and Sie."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "How to give orders."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Person",
+                    "Rule",
+                    "Example (Gehen)"
+                ],
+                "rows": [
+                    [
+                        "Du (You)",
+                        "Drop -st & Du",
+                        "Geh! (Go!)"
+                    ],
+                    [
+                        "Ihr (You guys)",
+                        "Drop Ihr",
+                        "Geht! (Go guys!)"
+                    ],
+                    [
+                        "Sie (Formal)",
+                        "Swap Verb & Sie",
+                        "Gehen Sie! (Please go!)"
+                    ]
+                ],
+                "highlight_pattern": "Geh|Geht|Gehen"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_imp_1",
+                "type": "fill_blank",
+                "question": "___ (Come) hierher! (Du form)",
+                "options": [
+                    "Komm",
+                    "Kommst",
+                    "Kommen"
+                ],
+                "correct_answer": "Komm",
+                "trap_explanation": "Du kommst -> Drop st -> Komm!",
+                "explanation": "Komm hierher!",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_imp_2",
+                "type": "fill_blank",
+                "question": "___ (Eat) das! (Ihr form)",
+                "options": [
+                    "Esst",
+                    "Ess",
+                    "Essen"
+                ],
+                "correct_answer": "Esst",
+                "trap_explanation": "Ihr esst -> Drop Ihr -> Esst!",
+                "explanation": "Esst das!",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_imp_3",
+                "type": "sentence_order",
+                "question": "Arrange: [Sie] [Sprechen] [bitte] [lauter]",
+                "options": [
+                    "Sprechen",
+                    "Sie",
+                    "bitte",
+                    "lauter"
+                ],
+                "correct_answer": "Sprechen Sie bitte lauter",
+                "trap_explanation": "Formal command: Verb first + Sie.",
+                "explanation": "Sprechen Sie bitte lauter (Speak louder please).",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_imp_4",
+                "type": "true_false",
+                "question": "For 'Du' commands, we keep the 'du'. (e.g., Geh du!)",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "False",
+                "trap_explanation": "No! We drop the 'du'. Just 'Geh!'.",
+                "explanation": "False. Drop the pronoun 'du'.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_imp_5",
+                "type": "fill_blank",
+                "question": "___ (Be) ruhig! (Du form of Sein - Irregular)",
+                "options": [
+                    "Sei",
+                    "Bist",
+                    "Bin"
+                ],
+                "correct_answer": "Sei",
+                "trap_explanation": "Sein is irregular. Du form command is 'Sei'.",
+                "explanation": "Sei ruhig! (Be quiet!)",
+                "difficulty": "hard"
+            }
+        ]
+    },
+    {
+        "id": "separable_verbs",
+        "title": "Separable Verbs",
+        "category": "Advanced A1",
+        "order": 19,
+        "description": "Verbs that split up (Anrufen, Aufstehen).",
+        "comparison_hint": {
+            "hindi": "Kuch verbs toot jaate hain. 'Anrufen' (Call karna). 'An' sentence ke end mein chala jaata hai. 'Ich rufe dich AN'.",
+            "english": "Prefix goes to the END. I call you UP -> Ich rufe dich AN."
+        },
+        "sections": [
+            {
+                "type": "text",
+                "content": "Common prefixes that separate: ab, an, auf, aus, ein, mit, vor, zu."
+            },
+            {
+                "type": "table",
+                "headers": [
+                    "Verb",
+                    "Meaning",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Anrufen",
+                        "To call",
+                        "Ich rufe dich AN."
+                    ],
+                    [
+                        "Aufstehen",
+                        "To get up",
+                        "Ich stehe um 7 Uhr AUF."
+                    ],
+                    [
+                        "Einkaufen",
+                        "To shop",
+                        "Wir kaufen im Supermarkt EIN."
+                    ],
+                    [
+                        "Mitkommen",
+                        "To come along",
+                        "Kommst du MIT?"
+                    ]
+                ],
+                "highlight_pattern": "AN|AUF|EIN|MIT"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_sep_1",
+                "type": "sentence_order",
+                "question": "Arrange: [an] [Ich] [rufe] [meine Mutter]",
+                "options": [
+                    "Ich",
+                    "rufe",
+                    "meine Mutter",
+                    "an"
+                ],
+                "correct_answer": "Ich rufe meine Mutter an",
+                "trap_explanation": "Prefix 'an' goes to the very END.",
+                "explanation": "Ich rufe ... an.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_sep_2",
+                "type": "fill_blank",
+                "question": "Wann stehst du ___? (aufstehen)",
+                "options": [
+                    "auf",
+                    "an",
+                    "aus"
+                ],
+                "correct_answer": "auf",
+                "trap_explanation": "Verb is aufstehen. Prefix is auf.",
+                "explanation": "Wann stehst du auf?",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_sep_3",
+                "type": "multiple_choice",
+                "question": "Wir ___ heute ein. (einkaufen)",
+                "options": [
+                    "kaufen",
+                    "kauft"
+                ],
+                "correct_answer": "kaufen",
+                "trap_explanation": "Wir kaufen ... ein.",
+                "explanation": "Wir kaufen ... ein.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_sep_4",
+                "type": "true_false",
+                "question": "The prefix stays attached to the verb in a normal sentence.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "correct_answer": "False",
+                "trap_explanation": "No, it separates and goes to the end.",
+                "explanation": "False. It separates.",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_sep_5",
+                "type": "sentence_order",
+                "question": "Arrange: [aus] [Er] [sieht] [gut]",
+                "options": [
+                    "Er",
+                    "sieht",
+                    "gut",
+                    "aus"
+                ],
+                "correct_answer": "Er sieht gut aus",
+                "trap_explanation": "Aussehen (to look like). Er sieht ... aus.",
+                "explanation": "Er sieht gut aus (He looks good).",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "id": "deep_cases_explanation",
+        "title": "Deep Dive: German Cases (Käraka System)",
+        "category": "Advanced Grammar",
+        "order": 50,
+        "description": "The complete logic of Nominative, Accusative, and Dative with Hinglish examples.",
+        "comparison_hint": {
+            "hindi": "Sanskrit aur Hindi mein Kāraka system hai (Kartā, Karma, Sampradāna). German mein bhi similar system hai: Nominative (Kartā - jo karta hai), Accusative (Karma - jis par hota hai), Dative (Sampradāna - jisko milta hai).",
+            "english": "German cases are like subject/object roles. Nominative = Subject (The Doer), Accusative = Direct Object (The Thing Affected), Dative = Indirect Object (The Receiver)."
+        },
+        "sections": [
+            {
+                "type": "deep_explanation",
+                "title": "The Core Concept: Who Does What to Whom?",
+                "content": "Imagine Ali gives Zara an apple. Let's break it down:\n\n• Ali = The GIVER (doing the action) → NOMINATIVE\n• Apple = The GIFT (being given) → ACCUSATIVE  \n• Zara = The RECEIVER (receiving the gift) → DATIVE",
+                "logic_steps": [
+                    "1. NOMINATIVE (कर्ता): Jo kaam karta hai = The Doer",
+                    "2. ACCUSATIVE (कर्म): Jis cheez par kaam hota hai = The Direct Target",
+                    "3. DATIVE (संप्रदान): Jisko kuch milta/hota hai = The Receiver",
+                    "Example: Ali gibt Zara einen Apfel (Ali gives Zara an apple)",
+                    "• Ali (Nom) = Doer",
+                    "• einen Apfel (Acc) = Thing being given",
+                    "• Zara (Dat) = Person receiving"
+                ],
+                "hindi_logic": "Jab hum sentence banate hain, teen roles hote hain: Kartā (Nom), Karma (Acc), Sampradāna (Dat). German mein article change hota hai case ke according."
+            },
+            {
+                "type": "table",
+                "title": "Case Identification: The Questions",
+                "headers": [
+                    "Case",
+                    "Question (German)",
+                    "Question (Hindi)",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Nominative",
+                        "Wer? (Who?)",
+                        "Kaun? (कौन?)",
+                        "Ali isst (Ali eats)"
+                    ],
+                    [
+                        "Accusative",
+                        "Wen/Was? (Whom/What?)",
+                        "Kisko/Kya? (किसको/क्या?)",
+                        "Ali isst einen Apfel (Ali eats an apple)"
+                    ],
+                    [
+                        "Dative",
+                        "Wem? (To whom?)",
+                        "Kisko? (किसको - milta hai)",
+                        "Ali gibt Zara einen Apfel (Ali gives Zara an apple)"
+                    ]
+                ],
+                "highlight_pattern": "Wer|Wen|Was|Wem"
+            },
+            {
+                "type": "table",
+                "title": "The Article Changes (Der/Die/Das Logic)",
+                "headers": [
+                    "Gender",
+                    "Nominative",
+                    "Accusative",
+                    "Dative"
+                ],
+                "rows": [
+                    [
+                        "Masculine",
+                        "Der Mann",
+                        "Den Mann",
+                        "Dem Mann"
+                    ],
+                    [
+                        "Feminine",
+                        "Die Frau",
+                        "Die Frau",
+                        "Der Frau"
+                    ],
+                    [
+                        "Neuter",
+                        "Das Kind",
+                        "Das Kind",
+                        "Dem Kind"
+                    ],
+                    [
+                        "Plural",
+                        "Die Leute",
+                        "Die Leute",
+                        "Den Leuten"
+                    ]
+                ],
+                "highlight_pattern": "Der|Den|Dem|Die"
+            },
+            {
+                "type": "scenarios",
+                "title": "Real-Life Scenarios with Hindi Logic",
+                "items": [
+                    {
+                        "situation": "Simple Action (Only Nominative + Accusative)",
+                        "german": "Ahmed kauft einen Laptop.",
+                        "english": "Ahmed buys a laptop.",
+                        "hindi": "Ahmed laptop kharidta hai.",
+                        "grammar_note": "Ahmed (Nom - Doer), einen Laptop (Acc - Thing bought). Laptop is Masculine (Der Laptop), so Accusative = Den → einen."
+                    },
+                    {
+                        "situation": "Giving Scenario (All Three Cases)",
+                        "german": "Kabir gibt seinem Bruder ein Geschenk.",
+                        "english": "Kabir gives his brother a gift.",
+                        "hindi": "Kabir apne bhai ko gift deta hai.",
+                        "grammar_note": "Kabir (Nom - Giver), seinem Bruder (Dat - Receiver). Why 'seinem'? 'Bruder' is Masculine, Dative Possessive = seinem. 'Ein Geschenk' (Acc - The Gift)."
+                    },
+                    {
+                        "situation": "Helping Scenario",
+                        "german": "Zara hilft ihrer Mutter.",
+                        "english": "Zara helps her mother.",
+                        "hindi": "Zara apni maa ki madad karti hai.",
+                        "grammar_note": "Zara (Nom), ihrer Mutter (Dat). Why Dative? Verb 'helfen' (to help) ALWAYS takes Dative. Mutter is Feminine, so Dative = ihrer."
+                    }
+                ]
+            },
+            {
+                "type": "tip",
+                "content": "🔑 KEY RULE: Masculine is the ONLY gender that changes in Accusative (Der → Den). Feminine and Neuter stay the same in Accusative!"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_case_1",
+                "type": "multiple_choice",
+                "question": "Ali sieht ___ Mann. (Ali sees the man) - What case is 'Mann'?",
+                "options": [
+                    "Der Mann (Nom)",
+                    "Den Mann (Acc)",
+                    "Dem Mann (Dat)"
+                ],
+                "correct_answer": "Den Mann (Acc)",
+                "trap_explanation": "TRAP! You might think 'Der' because Mann is Masculine. But 'sehen' (to see) needs Accusative. Masculine Accusative = Den.",
+                "explanation": "Sehen (to see) takes Accusative object. Mann is Masculine, so Der → Den.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_case_2",
+                "type": "multiple_choice",
+                "question": "Ich gebe ___ Kind ein Buch. (I give the child a book) - What case is 'Kind'?",
+                "options": [
+                    "Das Kind (Nom)",
+                    "Das Kind (Acc)",
+                    "Dem Kind (Dat)"
+                ],
+                "correct_answer": "Dem Kind (Dat)",
+                "trap_explanation": "Kind is receiving the book. Receiver = Dative. Neuter Dative = Dem.",
+                "explanation": "Kind is the receiver (jisko milta hai), so Dative. Das → Dem.",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "id": "deep_prepositions",
+        "title": "Prepositions: Motion vs Static (The 'In' Mystery Solved)",
+        "category": "Advanced Grammar",
+        "order": 51,
+        "description": "The complete logic of Two-Way Prepositions with real examples.",
+        "comparison_hint": {
+            "hindi": "English mein sirf 'In' bolte hain. German mein 'In' ke saath case change hota hai: Movement (A se B tak) = Accusative, Static Position (Wahan hai) = Dative.",
+            "english": "Prepositions can take either Accusative (motion) or Dative (location), depending on whether you're MOVING or STATIONARY."
+        },
+        "sections": [
+            {
+                "type": "deep_explanation",
+                "title": "The Logic of 'In' (Bahar se Andar vs Andar Hai)",
+                "content": "Why do we say 'In den Park' but 'In dem (Im) Park'?",
+                "logic_steps": [
+                    "1. 'In' = Inside an enclosed space (Park, School, etc.)",
+                    "2. Ask: Are we MOVING from Point A to Point B? (Wohin? - Where TO?)",
+                    "3. YES → ACCUSATIVE (In DEN Park) - Movement!",
+                    "4. NO, we're ALREADY there? (Wo? - Where?)",
+                    "5. Already there → DATIVE (In DEM/IM Park) - Static!",
+                    "WHY? Movement = Action happening TO the object = Accusative",
+                    "Static = Just location, no action = Dative"
+                ],
+                "hindi_logic": "Jab hum bahar se andar ja rahe hain (Movement), German 'Accusative' use karta hai. Jab hum already wahan hain (Static), 'Dative' use hota hai."
+            },
+            {
+                "type": "table",
+                "title": "Two-Way Prepositions (Wechselpräpositionen)",
+                "headers": [
+                    "Preposition",
+                    "Meaning",
+                    "Motion (Acc)",
+                    "Static (Dat)"
+                ],
+                "rows": [
+                    [
+                        "In",
+                        "In/Into",
+                        "In DEN Park (going INTO)",
+                        "In DEM Park (already INSIDE)"
+                    ],
+                    [
+                        "An",
+                        "On/At (vertical)",
+                        "An DIE Wand (putting ON wall)",
+                        "An DER Wand (already ON wall)"
+                    ],
+                    [
+                        "Auf",
+                        "On (horizontal)",
+                        "Auf DEN Tisch (putting ON table)",
+                        "Auf DEM Tisch (already ON table)"
+                    ],
+                    [
+                        "Über",
+                        "Over/Above",
+                        "Über DEN Fluss (going OVER)",
+                        "Über DEM Fluss (hovering OVER)"
+                    ],
+                    [
+                        "Unter",
+                        "Under",
+                        "Unter DEN Tisch (going UNDER)",
+                        "Unter DEM Tisch (already UNDER)"
+                    ],
+                    [
+                        "Vor",
+                        "In front of",
+                        "Vor DAS Haus (going IN FRONT)",
+                        "Vor DEM Haus (standing IN FRONT)"
+                    ],
+                    [
+                        "Hinter",
+                        "Behind",
+                        "Hinter DIE Tür (going BEHIND)",
+                        "Hinter DER Tür (already BEHIND)"
+                    ],
+                    [
+                        "Neben",
+                        "Next to",
+                        "Neben DEN Stuhl (moving NEXT TO)",
+                        "Neben DEM Stuhl (standing NEXT TO)"
+                    ],
+                    [
+                        "Zwischen",
+                        "Between",
+                        "Zwischen DIE Bäume (going BETWEEN)",
+                        "Zwischen DEN Bäumen (standing BETWEEN)"
+                    ]
+                ],
+                "highlight_pattern": "In|An|Auf|Über|Unter|Vor|Hinter|Neben|Zwischen"
+            },
+            {
+                "type": "scenarios",
+                "title": "Movement vs Static Examples",
+                "items": [
+                    {
+                        "situation": "Movement (Wohin? - Where to?)",
+                        "german": "Ali geht in die Schule.",
+                        "english": "Ali goes into the school.",
+                        "hindi": "Ali school ke andar ja raha hai.",
+                        "grammar_note": "Movement! Die Schule (Fem) stays 'Die' in Accusative. In + die = in die."
+                    },
+                    {
+                        "situation": "Static Position (Wo? - Where?)",
+                        "german": "Ali ist in der Schule.",
+                        "english": "Ali is in the school.",
+                        "hindi": "Ali school mein hai (already wahan hai).",
+                        "grammar_note": "Static! Dative. Feminine 'Die' changes to 'Der' in Dative. In + der = in der."
+                    },
+                    {
+                        "situation": "Movement (Masculine Example)",
+                        "german": "Ahmed stellt das Buch auf den Tisch.",
+                        "english": "Ahmed puts the book on the table.",
+                        "hindi": "Ahmed kitab table par rakh raha hai.",
+                        "grammar_note": "Movement (putting)! Accusative. Tisch (Masc): Der → Den. Auf + den = auf den."
+                    },
+                    {
+                        "situation": "Static (Masculine Example)",
+                        "german": "Das Buch liegt auf dem Tisch.",
+                        "english": "The book is lying on the table.",
+                        "hindi": "Kitab table par padi hui hai.",
+                        "grammar_note": "Static (already there)! Dative. Masculine: Der → Dem. Auf + dem = auf dem."
+                    }
+                ]
+            },
+            {
+                "type": "table",
+                "title": "Accusative-ONLY Prepositions (FUDOG Mnemonic)",
+                "headers": [
+                    "Preposition",
+                    "Meaning",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Für",
+                        "For",
+                        "Für meinen Bruder (For my brother - Acc)"
+                    ],
+                    [
+                        "Um",
+                        "Around/At (time)",
+                        "Um den Park (Around the park - Acc)"
+                    ],
+                    [
+                        "Durch",
+                        "Through",
+                        "Durch die Stadt (Through the city - Acc)"
+                    ],
+                    [
+                        "Ohne",
+                        "Without",
+                        "Ohne dich (Without you - Acc)"
+                    ],
+                    [
+                        "Gegen",
+                        "Against",
+                        "Gegen den Wind (Against the wind - Acc)"
+                    ]
+                ],
+                "highlight_pattern": "Für|Um|Durch|Ohne|Gegen"
+            },
+            {
+                "type": "table",
+                "title": "Dative-ONLY Prepositions (Blue Zebra Mnemonic)",
+                "headers": [
+                    "Preposition",
+                    "Meaning",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Aus",
+                        "Out of/From",
+                        "Aus dem Haus (Out of the house - Dat)"
+                    ],
+                    [
+                        "Außer",
+                        "Except",
+                        "Außer mir (Except me - Dat)"
+                    ],
+                    [
+                        "Bei",
+                        "At/Near",
+                        "Bei meinem Freund (At my friend's - Dat)"
+                    ],
+                    [
+                        "Mit",
+                        "With",
+                        "Mit dem Auto (With/By car - Dat)"
+                    ],
+                    [
+                        "Nach",
+                        "After/To",
+                        "Nach der Schule (After school - Dat)"
+                    ],
+                    [
+                        "Seit",
+                        "Since",
+                        "Seit einem Jahr (Since a year - Dat)"
+                    ],
+                    [
+                        "Von",
+                        "From/Of",
+                        "Von meiner Mutter (From my mother - Dat)"
+                    ],
+                    [
+                        "Zu",
+                        "To",
+                        "Zu dem (Zum) Arzt (To the doctor - Dat)"
+                    ]
+                ],
+                "highlight_pattern": "Aus|Außer|Bei|Mit|Nach|Seit|Von|Zu"
+            },
+            {
+                "type": "tip",
+                "content": "🎯 MASTER TIP: 'Mit' (With) ALWAYS takes Dative because you're WITH someone/something (together). Think: Mit mir (With me - Dat), Mit dem Bus (By bus - Dat)."
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_prep_1",
+                "type": "multiple_choice",
+                "question": "Ich gehe ___ Park. (I'm going into the park)",
+                "options": [
+                    "in der Park",
+                    "in den Park",
+                    "in dem Park"
+                ],
+                "correct_answer": "in den Park",
+                "trap_explanation": "Movement! You're going FROM outside TO inside. Movement = Accusative. Park (Masc): Der → Den.",
+                "explanation": "Gehen (going) = Movement. Accusative. Park is Masculine: in den Park.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_prep_2",
+                "type": "multiple_choice",
+                "question": "Ich bin ___ Park. (I am in the park)",
+                "options": [
+                    "in der Park",
+                    "in den Park",
+                    "in dem (im) Park"
+                ],
+                "correct_answer": "in dem (im) Park",
+                "trap_explanation": "Static! You're ALREADY there, not moving. Static = Dative. Masculine: in dem (contracted: im).",
+                "explanation": "Bin (am) = Static position. Dative. Masculine: in dem → im Park.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_prep_3",
+                "type": "multiple_choice",
+                "question": "Das Geschenk ist für ___. (The gift is for me)",
+                "options": [
+                    "ich",
+                    "mich",
+                    "mir"
+                ],
+                "correct_answer": "mich",
+                "trap_explanation": "'Für' ALWAYS takes Accusative. Ich (Nom) → mich (Acc).",
+                "explanation": "Für = Accusative-only preposition. For me = für mich (Acc).",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_prep_4",
+                "type": "multiple_choice",
+                "question": "Ich fahre mit ___. (I'm traveling with you)",
+                "options": [
+                    "du",
+                    "dich",
+                    "dir"
+                ],
+                "correct_answer": "dir",
+                "trap_explanation": "'Mit' ALWAYS takes Dative. Du (Nom) → dir (Dat).",
+                "explanation": "Mit = Dative-only. With you = mit dir (Dat).",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "id": "deep_pronouns",
+        "title": "Pronouns: The Complete Table (Ich/Mich/Mir System)",
+        "category": "Advanced Grammar",
+        "order": 52,
+        "description": "Master all pronoun forms across all cases with Hindi logic.",
+        "comparison_hint": {
+            "hindi": "Hindi mein 'Main/Mujhe/Mujhko' hote hain. German mein 'Ich/Mich/Mir' hote hain.",
+            "english": "Pronouns change based on their role: I (Subject), Me (Direct Object), To Me (Indirect Object)."
+        },
+        "sections": [
+            {
+                "type": "table",
+                "title": "Complete Pronoun Declension Table",
+                "headers": [
+                    "English",
+                    "Nominative (Subject)",
+                    "Accusative (Direct Obj)",
+                    "Dative (Indirect Obj)"
+                ],
+                "rows": [
+                    [
+                        "I/Me",
+                        "Ich (Main)",
+                        "Mich (Mujhe)",
+                        "Mir (Mujhko)"
+                    ],
+                    [
+                        "You (informal)",
+                        "Du (Tum)",
+                        "Dich (Tujhe)",
+                        "Dir (Tujhko)"
+                    ],
+                    [
+                        "He/Him",
+                        "Er (Woh - ladka)",
+                        "Ihn (Use)",
+                        "Ihm (Usko)"
+                    ],
+                    [
+                        "She/Her",
+                        "Sie (Woh - ladki)",
+                        "Sie (Use)",
+                        "Ihr (Usko)"
+                    ],
+                    [
+                        "It",
+                        "Es (Woh - cheez)",
+                        "Es (Use)",
+                        "Ihm (Usko)"
+                    ],
+                    [
+                        "We/Us",
+                        "Wir (Hum)",
+                        "Uns (Humein)",
+                        "Uns (Humko)"
+                    ],
+                    [
+                        "You all",
+                        "Ihr (Tum sab)",
+                        "Euch (Tum sabko)",
+                        "Euch (Tum sabko)"
+                    ],
+                    [
+                        "They/Them",
+                        "Sie (Ve)",
+                        "Sie (Unhe)",
+                        "Ihnen (Unko)"
+                    ],
+                    [
+                        "You (Formal)",
+                        "Sie (Aap)",
+                        "Sie (Aapko)",
+                        "Ihnen (Aapko)"
+                    ]
+                ],
+                "highlight_pattern": "Ich|Mich|Mir|Du|Dich|Dir|Er|Ihn|Ihm"
+            },
+            {
+                "type": "deep_explanation",
+                "title": "Understanding 'Für mich' vs 'Mit mir'",
+                "content": "Why 'For ME' but 'With ME' use different words?",
+                "logic_steps": [
+                    "1. Für (For) = Accusative-only preposition",
+                    "2. Mit (With) = Dative-only preposition",
+                    "3. Ich (I) → mich (Acc) → mir (Dat)",
+                    "4. Result: Für mich (For me - Acc), Mit mir (With me - Dat)"
+                ],
+                "hindi_logic": "'Mere liye' = Für mich (Acc). 'Mere saath' = Mit mir (Dat). Preposition ke hisaab se pronoun change hota hai."
+            },
+            {
+                "type": "scenarios",
+                "title": "Pronoun Usage Examples",
+                "items": [
+                    {
+                        "situation": "Nominative (Subject)",
+                        "german": "Ich sehe dich.",
+                        "english": "I see you.",
+                        "hindi": "Main tujhe dekhta hoon.",
+                        "grammar_note": "Ich (Nom - Subject/Doer), dich (Acc - Direct Object)."
+                    },
+                    {
+                        "situation": "Accusative (Direct Object)",
+                        "german": "Ahmed liebt mich.",
+                        "english": "Ahmed loves me.",
+                        "hindi": "Ahmed mujhe pyaar karta hai.",
+                        "grammar_note": "Mich (Acc - Direct object of love)."
+                    },
+                    {
+                        "situation": "Dative (Indirect Object)",
+                        "german": "Zara gibt mir ein Buch.",
+                        "english": "Zara gives me a book.",
+                        "hindi": "Zara mujhe kitab deti hai.",
+                        "grammar_note": "Mir (Dat - Receiver of the book). Ein Buch (Acc - The thing given)."
+                    },
+                    {
+                        "situation": "Accusative Preposition",
+                        "german": "Das Geschenk ist für dich.",
+                        "english": "The gift is for you.",
+                        "hindi": "Yeh gift tere liye hai.",
+                        "grammar_note": "Für (For) = Acc-only. Du → dich."
+                    },
+                    {
+                        "situation": "Dative Preposition",
+                        "german": "Ich komme mit dir.",
+                        "english": "I'm coming with you.",
+                        "hindi": "Main tere saath aa raha hoon.",
+                        "grammar_note": "Mit (With) = Dat-only. Du → dir."
+                    },
+                    {
+                        "situation": "Helping Verb (Dative)",
+                        "german": "Kabir hilft mir.",
+                        "english": "Kabir helps me.",
+                        "hindi": "Kabir meri madad karta hai.",
+                        "grammar_note": "Helfen (to help) ALWAYS takes Dative object. Ich → mir."
+                    }
+                ]
+            },
+            {
+                "type": "tip",
+                "content": "💡 MEMORY TRICK: Accusative sounds like 'Action' - it's the direct target of action. Dative is the 'Receiver/Beneficiary' (jisko milta hai)."
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_pron_1",
+                "type": "multiple_choice",
+                "question": "Siehst du ___? (Do you see me?)",
+                "options": [
+                    "ich",
+                    "mich",
+                    "mir"
+                ],
+                "correct_answer": "mich",
+                "trap_explanation": "Sehen (to see) takes Accusative object. Ich → mich.",
+                "explanation": "Direct object of 'seeing' = Accusative. Siehst du mich?",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_pron_2",
+                "type": "multiple_choice",
+                "question": "Kannst du ___ helfen? (Can you help me?)",
+                "options": [
+                    "ich",
+                    "mich",
+                    "mir"
+                ],
+                "correct_answer": "mir",
+                "trap_explanation": "TRAP! Helfen (help) ALWAYS takes Dative, not Accusative. Ich → mir.",
+                "explanation": "Helfen = Dative verb. Can you help me? = Kannst du mir helfen?",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_pron_3",
+                "type": "fill_blank",
+                "question": "Ich fahre mit ___. (I travel with him)",
+                "options": [
+                    "er",
+                    "ihn",
+                    "ihm"
+                ],
+                "correct_answer": "ihm",
+                "trap_explanation": "Mit = Dative-only. Er (he) → ihm (Dat).",
+                "explanation": "Mit (with) takes Dative. Mit ihm (with him).",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_pron_4",
+                "type": "multiple_choice",
+                "question": "Das ist für ___. (This is for her)",
+                "options": [
+                    "sie",
+                    "sie",
+                    "ihr"
+                ],
+                "correct_answer": "sie",
+                "trap_explanation": "Für = Accusative. Sie (she) stays 'sie' in Accusative.",
+                "explanation": "Für (for) = Accusative-only. For her = für sie (Acc).",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_pron_5",
+                "type": "multiple_choice",
+                "question": "Ich gebe ___ das Buch. (I give you the book)",
+                "options": [
+                    "du",
+                    "dich",
+                    "dir"
+                ],
+                "correct_answer": "dir",
+                "trap_explanation": "Geben (to give) has TWO objects: dir (Dat - receiver), das Buch (Acc - thing given).",
+                "explanation": "Geben takes Dative for receiver. I give YOU = dir.",
+                "difficulty": "medium"
+            }
+        ]
+    }
+]

@@ -1,0 +1,399 @@
+[
+    {
+        "id": 1006,
+        "german": "denken",
+        "clean_word": "denken",
+        "syllables": "den-ken",
+        "english": "to think",
+        "roman_hindi": "sochna",
+        "type": "verb",
+        "level": "A1",
+        "category": "Mental",
+        "tags": [
+            "verb",
+            "mental"
+        ],
+        "mnemonic": "Imagine 'Denk' (think) - Rodin's 'The Thinker'.",
+        "cognates": {
+            "has_match": true,
+            "english_match": "think",
+            "hindi_match": null,
+            "similarity_score": "Medium"
+        },
+        "related": {
+            "synonyms": [
+                "glauben"
+            ],
+            "antonyms": []
+        },
+        "details": {
+            "conjugation": "Regular"
+        },
+        "examples": [
+            {
+                "meaning_label": "Meaning: To think of",
+                "german": "Ich denke oft an dich.",
+                "english": "I think of you often.",
+                "hindi_sentence": "Main aksar tumhare baare mein sochtau.",
+                "english_explanation": "'Denken an' + Accusative. 'Dich' is Accusative.",
+                "hindi_explanation": "'Denken an' ke saath Accusative lagta. 'Dich' Accusative hai."
+            },
+            {
+                "meaning_label": "Meaning: Opinion",
+                "german": "Was denkst du?",
+                "english": "What do you think?",
+                "hindi_sentence": "Tum kya sochre?",
+                "english_explanation": "Simple question structure.",
+                "hindi_explanation": "Seedha sawaal hai."
+            }
+        ]
+    },
+    {
+        "id": 1007,
+        "german": "diskutieren",
+        "clean_word": "diskutieren",
+        "syllables": "dis-ku-tie-ren",
+        "english": "to discuss",
+        "roman_hindi": "behas karna / discuss karna",
+        "type": "verb",
+        "level": "A2",
+        "category": "Communication",
+        "tags": [
+            "verb",
+            "talk"
+        ],
+        "mnemonic": "Sounds like 'discuss'.",
+        "cognates": {
+            "has_match": true,
+            "english_match": "discuss",
+            "hindi_match": null,
+            "similarity_score": "High"
+        },
+        "related": {
+            "synonyms": [
+                "besprechen"
+            ],
+            "antonyms": []
+        },
+        "details": {
+            "conjugation": "Regular"
+        },
+        "examples": [
+            {
+                "meaning_label": "Meaning: Discuss topic",
+                "german": "Wir diskutieren über Politik.",
+                "english": "We are discussing politics.",
+                "hindi_sentence": "Hum politics pe discuss karre.",
+                "english_explanation": "'Diskutieren über' + Accusative.",
+                "hindi_explanation": "'Diskutieren über' ke saath Accusative aata."
+            }
+        ]
+    },
+    {
+        "id": 1042,
+        "german": "lächeln",
+        "clean_word": "lächeln",
+        "syllables": "lä-cheln",
+        "english": "to smile",
+        "roman_hindi": "muskurana",
+        "type": "verb",
+        "level": "A1",
+        "category": "Emotion",
+        "tags": [
+            "verb",
+            "emotion"
+        ],
+        "mnemonic": "Imagine 'Laugh-el' - a small laugh is a smile.",
+        "cognates": {
+            "has_match": true,
+            "english_match": "laugh (related)",
+            "hindi_match": null,
+            "similarity_score": "Low"
+        },
+        "related": {
+            "synonyms": [],
+            "antonyms": [
+                "weinen"
+            ]
+        },
+        "details": {
+            "conjugation": "Regular"
+        },
+        "examples": [
+            {
+                "meaning_label": "Meaning: To smile",
+                "german": "Sie lächelt immer.",
+                "english": "She always smiles.",
+                "hindi_sentence": "Woh hamesha muskurati.",
+                "english_explanation": "Subject 'Sie' conjugates verb to 'lächelt'.",
+                "hindi_explanation": "Subject 'Sie' hai toh verb 'lächelt' banta."
+            }
+        ]
+    },
+    {
+        "id": 1045,
+        "german": "meinen",
+        "clean_word": "meinen",
+        "syllables": "mei-nen",
+        "english": "to mean / to think",
+        "roman_hindi": "matlab hona / lagna",
+        "type": "verb",
+        "level": "A1",
+        "category": "Mental",
+        "tags": [
+            "verb",
+            "opinion"
+        ],
+        "mnemonic": "Sounds like 'mean'.",
+        "cognates": {
+            "has_match": true,
+            "english_match": "mean",
+            "hindi_match": "maane (related concept)",
+            "similarity_score": "High"
+        },
+        "related": {
+            "synonyms": [
+                "glauben",
+                "denken"
+            ],
+            "antonyms": []
+        },
+        "details": {
+            "conjugation": "Regular"
+        },
+        "examples": [
+            {
+                "meaning_label": "Meaning: Opinion",
+                "german": "Was meinst du?",
+                "english": "What do you mean / think?",
+                "hindi_sentence": "Tumhara kya matlab hai?",
+                "english_explanation": "Asking for opinion or clarification.",
+                "hindi_explanation": "Ray ya matlab poochne ke liye."
+            },
+            {
+                "meaning_label": "Meaning: Intention",
+                "german": "Ich meine es ernst.",
+                "english": "I mean it seriously.",
+                "hindi_sentence": "Main serious bolrau.",
+                "english_explanation": "Expression for being serious.",
+                "hindi_explanation": "Serious hone ki baat hai."
+            }
+        ]
+    },
+    {
+        "id": 1047,
+        "german": "planen",
+        "clean_word": "planen",
+        "syllables": "pla-nen",
+        "english": "to plan",
+        "roman_hindi": "plan karna",
+        "type": "verb",
+        "level": "A1",
+        "category": "General",
+        "tags": [
+            "verb",
+            "planning"
+        ],
+        "mnemonic": "Identical to 'plan'.",
+        "cognates": {
+            "has_match": true,
+            "english_match": "plan",
+            "hindi_match": "plan",
+            "similarity_score": "High"
+        },
+        "related": {
+            "synonyms": [
+                "vorhaben"
+            ],
+            "antonyms": []
+        },
+        "details": {
+            "conjugation": "Regular"
+        },
+        "examples": [
+            {
+                "meaning_label": "Meaning: To plan",
+                "german": "Wir planen eine Reise.",
+                "english": "We are planning a trip.",
+                "hindi_sentence": "Hum ek trip plan karre.",
+                "english_explanation": "'Eine Reise' is Accusative Object.",
+                "hindi_explanation": "'Eine Reise' object hai."
+            }
+        ]
+    },
+    {
+        "id": 1051,
+        "german": "reservieren",
+        "clean_word": "reservieren",
+        "syllables": "re-ser-vie-ren",
+        "english": "to reserve",
+        "roman_hindi": "reserve karna / book karna",
+        "type": "verb",
+        "level": "A1",
+        "category": "Travel/Dining",
+        "tags": [
+            "verb",
+            "booking"
+        ],
+        "mnemonic": "Identical to 'reserve'.",
+        "cognates": {
+            "has_match": true,
+            "english_match": "reserve",
+            "hindi_match": null,
+            "similarity_score": "High"
+        },
+        "related": {
+            "synonyms": [
+                "buchen"
+            ],
+            "antonyms": [
+                "stornieren"
+            ]
+        },
+        "details": {
+            "conjugation": "Regular"
+        },
+        "examples": [
+            {
+                "meaning_label": "Meaning: Booking",
+                "german": "Ich möchte einen Tisch reservieren.",
+                "english": "I would like to reserve a table.",
+                "hindi_sentence": "Main ek table book karna chahtau.",
+                "english_explanation": "'Einen Tisch' is Accusative (Masculine).",
+                "hindi_explanation": "'Einen Tisch' Accusative hai."
+            }
+        ]
+    },
+    {
+        "id": 1054,
+        "german": "schneiden",
+        "clean_word": "schneiden",
+        "syllables": "schnei-den",
+        "english": "to cut",
+        "roman_hindi": "kaatna",
+        "type": "verb",
+        "level": "A1",
+        "category": "Action",
+        "tags": [
+            "verb",
+            "kitchen"
+        ],
+        "mnemonic": "Imagine 'Snyder' cutting fabric.",
+        "cognates": {
+            "has_match": false,
+            "english_match": null,
+            "hindi_match": null,
+            "similarity_score": "None"
+        },
+        "related": {
+            "synonyms": [],
+            "antonyms": []
+        },
+        "details": {
+            "conjugation": "Irregular"
+        },
+        "examples": [
+            {
+                "meaning_label": "Meaning: To cut",
+                "german": "Ich schneide das Brot.",
+                "english": "I am cutting the bread.",
+                "hindi_sentence": "Main bread kaatrau.",
+                "english_explanation": "'Das Brot' is Accusative Object.",
+                "hindi_explanation": "'Das Brot' object hai."
+            },
+            {
+                "meaning_label": "Meaning: Haircut",
+                "german": "Er lässt sich die Haare schneiden.",
+                "english": "He is getting his hair cut.",
+                "hindi_sentence": "Woh apne baal kataara.",
+                "english_explanation": "Reflexive structure with 'lassen'.",
+                "hindi_explanation": "'Lassen' ke saath use hota hai."
+            }
+        ]
+    },
+    {
+        "id": 1055,
+        "german": "setzen",
+        "clean_word": "setzen",
+        "syllables": "set-zen",
+        "english": "to set / to put / to sit down",
+        "roman_hindi": "rakhna / baithna",
+        "type": "verb",
+        "level": "A1",
+        "category": "Action",
+        "tags": [
+            "verb",
+            "position"
+        ],
+        "mnemonic": "Sounds like 'set'.",
+        "cognates": {
+            "has_match": true,
+            "english_match": "set",
+            "hindi_match": null,
+            "similarity_score": "High"
+        },
+        "related": {
+            "synonyms": [
+                "stellen",
+                "legen"
+            ],
+            "antonyms": [
+                "stehen"
+            ]
+        },
+        "details": {
+            "conjugation": "Regular"
+        },
+        "examples": [
+            {
+                "meaning_label": "Meaning: Sit down",
+                "german": "Setzen Sie sich bitte.",
+                "english": "Please sit down.",
+                "hindi_sentence": "Tashreef rakhiye.",
+                "english_explanation": "Reflexive 'sich setzen'. Formal imperative.",
+                "hindi_explanation": "Izzat se bolne ke liye."
+            }
+        ]
+    },
+    {
+        "id": 1056,
+        "german": "spülen",
+        "clean_word": "spülen",
+        "syllables": "spü-len",
+        "english": "to wash / rinse",
+        "roman_hindi": "dhona",
+        "type": "verb",
+        "level": "A1",
+        "category": "Household",
+        "tags": [
+            "verb",
+            "cleaning"
+        ],
+        "mnemonic": "Imagine a 'spool' being washed.",
+        "cognates": {
+            "has_match": false,
+            "english_match": null,
+            "hindi_match": null,
+            "similarity_score": "None"
+        },
+        "related": {
+            "synonyms": [
+                "waschen"
+            ],
+            "antonyms": []
+        },
+        "details": {
+            "conjugation": "Regular"
+        },
+        "examples": [
+            {
+                "meaning_label": "Meaning: Dishes",
+                "german": "Ich spüle das Geschirr.",
+                "english": "I am washing the dishes.",
+                "hindi_sentence": "Main bartan dhorau.",
+                "english_explanation": "'Das Geschirr' is Accusative.",
+                "hindi_explanation": "'Das Geschirr' object hai."
+            }
+        ]
+    }
+]

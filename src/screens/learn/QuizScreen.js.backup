@@ -1,0 +1,277 @@
+setSentenceOrder(sentenceOrder.filter(w => w !== word));
+        } else {
+    setSentenceOrder([...sentenceOrder, word]);
+}
+    };
+
+const getOptionStyle = (option) => {
+    if (isExamMode) {
+        return selectedAnswer === option ? [styles.option, styles.optionSelected] : styles.option;
+    }
+
+    if (!showFeedback) {
+        return selectedAnswer === option ? styles.optionSelected : styles.option;
+    }
+
+    const optionStr = String(option).trim();
+    const correctStr = String(currentQuestion.correct_answer).trim();
+    const selectedStr = String(selectedAnswer).trim();
+
+    if (optionStr === correctStr) {
+        return [styles.option, styles.optionCorrect];
+    }
+
+    if (optionStr === selectedStr && optionStr !== correctStr) {
+        return [styles.option, styles.optionWrong];
+    }
+
+    return [styles.option, styles.optionDisabled];
+};
+
+return (
+    <View style={styles.container}>
+        <View style={styles.modal}>
+            {/* Header */}
+            <View style={styles.header}>
+                <TouchableOpacity onPress={() => navigation.goBack()}>
+                    <Text style={styles.closeIcon}>✕</Text>
+                </TouchableOpacity>
+                <Text style={styles.headerTitle}>
+                    {isExamMode ? 'Final Exam 🌋' : 'Quiz'}
+                </Text>
+                <View style={styles.scoreContainer}>
+                    <Text style={styles.scoreText}>
+                        {isExamMode ? `${currentQuestionIndex + 1}/${lessonData.quizQuestions.length}` : `🎯 ${score}`}
+                    </Text>
+                </View>
+            </View>
+
+            {/* Progress Bar */}
+            <View style={styles.progressBarContainer}>
+                <View style={[styles.progressBar, { width: `${progress}%`, backgroundColor: isExamMode ? '#EF4444' : '#FF9800' }]} />
+            </View>
+
+            <ScrollView contentContainerStyle={styles.scrollContent}>
+                {/* Question */}
+                <View style={styles.questionContainer}>
+                    <View style={styles.questionHeader}>
+                        <Text style={styles.questionNumber}>
+                            Question {currentQuestionIndex + 1}
+                        </Text>
+                        {currentQuestion.difficulty && !isExamMode && (
+                            <View style={[styles.badge, styles[`badge_${currentQuestion.difficulty}`]]}>
+                                <Text style={styles.badgeText}>{currentQuestion.difficulty.toUpperCase()}</Text>
+                            </View>
+                        )}
+                    </View>
+
+                    {isListening ? (
+                        <View style={{ alignItems: 'center', marginVertical: 20 }}>
+                            <TouchableOpacity style={styles.audioButton} onPress={playQuestionAudio}>
+                                <Text style={{ fontSize: 40 }}>🔊</Text>
+                            </TouchableOpacity>
+                            <Text style={styles.questionText}>{currentQuestion.question}</Text>
+                        </View>
+                    ) : (
+                        <Text style={styles.questionText}>{currentQuestion.question}</Text>
+                    )}
+                </View>
+
+                {/* Options Area */}
+                {isSentenceOrder ? (
+                    <View style={styles.sentenceOrderContainer}>
+                        <View style={styles.sentenceBox}>
+                            <Text style={styles.sentenceText}>
+                                {sentenceOrder.join(' ') || "Tap words to build sentence"}
+                            </Text>
+                        </View>
+                        <View style={styles.wordsContainer}>
+                            {currentQuestion.options.map((word, index) => (
+                                <TouchableOpacity
+                                    key={index}
+                                    style={[
+                                        styles.wordButton,
+                                        sentenceOrder.includes(word) && styles.wordButtonSelected
+                                    ]}
+                                    onPress={() => toggleWord(word)}
+                                    disabled={showFeedback && !isExamMode}
+                                >
+                                    <Text style={[
+                                        styles.wordText,
+                                        sentenceOrder.includes(word) && styles.wordTextSelected
+                                    ]}>{word}</Text>
+                                </TouchableOpacity>
+                            ))}
+                        </View>
+                        {(!showFeedback || isExamMode) && (
+                            <TouchableOpacity
+                                style={[styles.checkButton, sentenceOrder.length === 0 && styles.checkButtonDisabled]}
+                                onPress={() => handleAnswer(sentenceOrder)}
+                                disabled={sentenceOrder.length === 0}
+                            >
+                                <Text style={styles.checkButtonText}>
+                                    {isExamMode ? 'Next' : 'Check Answer'}
+                                </Text>
+                            </TouchableOpacity>
+                        )}
+                    </View>
+                ) : (
+                    <View style={styles.optionsContainer}>
+                        {currentQuestion.options.map((option, index) => (
+                            <TouchableOpacity
+                                key={index}
+                                style={getOptionStyle(option)}
+                                onPress={() => (!showFeedback || isExamMode) && handleAnswer(option)}
+                                disabled={showFeedback && !isExamMode}
+                            >
+                                <Text style={styles.optionText}>{option}</Text>
+                                {!isExamMode && showFeedback && String(option).trim() === String(currentQuestion.correct_answer).trim() && (
+                                    <Text style={styles.checkmark}>✓</Text>
+                                )}
+                                {!isExamMode && showFeedback && String(option).trim() === String(selectedAnswer).trim() && String(option).trim() !== String(currentQuestion.correct_answer).trim() && (
+                                    <Text style={styles.crossmark}>✕</Text>
+                                )}
+                            </TouchableOpacity>
+                        ))}
+                    </View>
+                )}
+
+                {/* Feedback Section (Hidden in Exam Mode) */}
+                {showFeedback && !isExamMode && (
+                    <View style={[styles.feedbackContainer, isCorrect ? styles.feedbackCorrect : styles.feedbackWrong]}>
+                        <Text style={styles.feedbackTitle}>
+                            {isCorrect ? '🎉 Correct!' : '❌ Incorrect'}
+                        </Text>
+
+                        {!isCorrect && (
+                            <View>
+                                <Text style={styles.correctAnswerText}>
+                                    Correct: {currentQuestion.correct_answer}
+                                </Text>
+                                {isSentenceOrder && (
+                                    <Text style={styles.yourAnswerText}>
+                                        Your Answer: {sentenceOrder.join(' ')}
+                                    </Text>
+                                )}
+                            </View>
+                        )}
+
+                        {currentQuestion.trap_explanation && !isCorrect && (
+                            <View style={styles.trapBox}>
+                                <Text style={styles.trapTitle}>⚠️ Watch Out!</Text>
+                                <Text style={styles.trapText}>{currentQuestion.trap_explanation}</Text>
+                            </View>
+                        )}
+
+                        {currentQuestion.explanation && (
+                            <View style={styles.explanationBox}>
+                                <Text style={styles.explanationTitle}>💡 Explanation</Text>
+                                <Text style={styles.explanationText}>{currentQuestion.explanation}</Text>
+                            </View>
+                        )}
+
+                        <TouchableOpacity style={styles.nextButton} onPress={handleNext}>
+                            <Text style={styles.nextButtonText}>
+                                {currentQuestionIndex < lessonData.quizQuestions.length - 1 ? 'Next Question' : 'Finish Quiz'}
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                )}
+            </ScrollView>
+        </View >
+    </View >
+);
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    modal: {
+        backgroundColor: '#fff',
+        borderRadius: 20,
+        width: '95%',
+        height: '90%',
+        padding: 20,
+    },
+    scrollContent: {
+        paddingBottom: 20,
+    },
+    header: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
+    },
+    closeIcon: { fontSize: 24, color: '#666' },
+    headerTitle: { fontSize: 20, fontWeight: 'bold', color: '#333' },
+    scoreContainer: { backgroundColor: '#f0f4f8', paddingHorizontal: 12, paddingVertical: 6, borderRadius: 15 },
+    scoreText: { fontSize: 16, fontWeight: 'bold', color: '#333' },
+    progressBarContainer: { height: 4, backgroundColor: '#e0e0e0', borderRadius: 2, marginBottom: 20 },
+    progressBar: { height: '100%', backgroundColor: '#FF9800', borderRadius: 2 },
+    questionContainer: { marginBottom: 20 },
+    questionHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 },
+    questionNumber: { fontSize: 14, color: '#999' },
+    badge: { paddingHorizontal: 8, paddingVertical: 2, borderRadius: 4 },
+    badge_easy: { backgroundColor: '#E8F5E9' },
+    badge_medium: { backgroundColor: '#FFF3E0' },
+    badge_hard: { backgroundColor: '#FFEBEE' },
+    badgeText: { fontSize: 10, fontWeight: 'bold', color: '#555' },
+    questionText: { fontSize: 20, fontWeight: 'bold', color: '#333' },
+
+    // Options
+    optionsContainer: { gap: 10 },
+    option: { backgroundColor: '#f0f4f8', padding: 15, borderRadius: 12, borderWidth: 2, borderColor: 'transparent', flexDirection: 'row', alignItems: 'center' },
+    optionSelected: { borderColor: '#2196F3', backgroundColor: '#E3F2FD' },
+    optionCorrect: { backgroundColor: '#E8F5E9', borderColor: '#4CAF50' },
+    optionWrong: { backgroundColor: '#FFEBEE', borderColor: '#F44336' },
+    optionDisabled: { opacity: 0.6 },
+    optionText: { fontSize: 16, color: '#333', flex: 1 },
+    checkmark: { fontSize: 20, color: '#4CAF50', fontWeight: 'bold' },
+    crossmark: { fontSize: 20, color: '#F44336', fontWeight: 'bold' },
+
+    // Sentence Order
+    sentenceOrderContainer: { gap: 15 },
+    sentenceBox: { minHeight: 60, backgroundColor: '#FAFAFA', borderRadius: 10, padding: 15, borderWidth: 1, borderColor: '#EEE', justifyContent: 'center' },
+    sentenceText: { fontSize: 18, color: '#333', textAlign: 'center' },
+    wordsContainer: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, justifyContent: 'center' },
+    wordButton: { backgroundColor: '#fff', paddingHorizontal: 15, paddingVertical: 10, borderRadius: 20, borderWidth: 1, borderColor: '#ddd', elevation: 2 },
+    wordButtonSelected: { backgroundColor: '#e0e0e0', borderColor: '#ccc', elevation: 0 },
+    wordText: { fontSize: 16, color: '#333' },
+    wordTextSelected: { color: '#999' },
+    checkButton: { backgroundColor: '#2196F3', padding: 15, borderRadius: 12, alignItems: 'center', marginTop: 10 },
+    checkButtonDisabled: { backgroundColor: '#B0BEC5' },
+    checkButtonText: { color: 'white', fontSize: 16, fontWeight: 'bold' },
+
+    // Feedback
+    feedbackContainer: { marginTop: 20, padding: 15, borderRadius: 12, borderWidth: 1 },
+    feedbackCorrect: { backgroundColor: '#E8F5E9', borderColor: '#C8E6C9' },
+    feedbackWrong: { backgroundColor: '#FFEBEE', borderColor: '#FFCDD2' },
+    feedbackTitle: { fontSize: 18, fontWeight: 'bold', marginBottom: 5, color: '#333' },
+    correctAnswerText: { fontSize: 14, color: '#2E7D32', marginBottom: 5, fontWeight: 'bold' },
+    yourAnswerText: { fontSize: 14, color: '#D32F2F', marginBottom: 10, fontStyle: 'italic' },
+    trapBox: { backgroundColor: 'rgba(255, 255, 255, 0.6)', padding: 10, borderRadius: 8, marginBottom: 10 },
+    trapTitle: { fontSize: 14, fontWeight: 'bold', color: '#D32F2F', marginBottom: 2 },
+    trapText: { fontSize: 14, color: '#B71C1C' },
+    explanationBox: { marginTop: 5 },
+    explanationTitle: { fontSize: 14, fontWeight: 'bold', color: '#1565C0', marginBottom: 2 },
+    explanationText: { fontSize: 14, color: '#0D47A1' },
+    nextButton: { backgroundColor: '#333', padding: 15, borderRadius: 12, alignItems: 'center', marginTop: 15 },
+    nextButtonText: { color: 'white', fontSize: 16, fontWeight: 'bold' },
+
+    errorText: { fontSize: 18, color: '#666', textAlign: 'center', marginBottom: 20 },
+    closeButton: { backgroundColor: '#007AFF', padding: 15, borderRadius: 10 },
+    closeButtonText: { color: '#fff', fontSize: 16, fontWeight: '600', textAlign: 'center' },
+
+    // Audio Button
+    audioButton: {
+        width: 80, height: 80, borderRadius: 40, backgroundColor: '#E0F2FE',
+        justifyContent: 'center', alignItems: 'center', marginBottom: 15,
+        elevation: 5
+    }
+});
+
+export default QuizScreen;

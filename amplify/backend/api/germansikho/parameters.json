@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "germansikho",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authgermansikho9ec46c78",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

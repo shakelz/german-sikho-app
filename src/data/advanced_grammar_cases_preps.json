@@ -1,0 +1,655 @@
+[
+    {
+        "id": "deep_cases_explanation",
+        "title": "Deep Dive: German Cases (Käraka System)",
+        "category": "Advanced Grammar",
+        "order": 50,
+        "description": "The complete logic of Nominative, Accusative, and Dative with Hinglish examples.",
+        "comparison_hint": {
+            "hindi": "Sanskrit aur Hindi mein Kāraka system hai (Kartā, Karma, Sampradāna). German mein bhi similar system hai: Nominative (Kartā - jo karta hai), Accusative (Karma - jis par hota hai), Dative (Sampradāna - jisko milta hai).",
+            "english": "German cases are like subject/object roles. Nominative = Subject (The Doer), Accusative = Direct Object (The Thing Affected), Dative = Indirect Object (The Receiver)."
+        },
+        "sections": [
+            {
+                "type": "deep_explanation",
+                "title": "The Core Concept: Who Does What to Whom?",
+                "content": "Imagine Ali gives Zara an apple. Let's break it down:\n\n• Ali = The GIVER (doing the action) → NOMINATIVE\n• Apple = The GIFT (being given) → ACCUSATIVE  \n• Zara = The RECEIVER (receiving the gift) → DATIVE",
+                "logic_steps": [
+                    "1. NOMINATIVE (कर्ता): Jo kaam karta hai = The Doer",
+                    "2. ACCUSATIVE (कर्म): Jis cheez par kaam hota hai = The Direct Target",
+                    "3. DATIVE (संप्रदान): Jisko kuch milta/hota hai = The Receiver",
+                    "Example: Ali gibt Zara einen Apfel (Ali gives Zara an apple)",
+                    "• Ali (Nom) = Doer",
+                    "• einen Apfel (Acc) = Thing being given",
+                    "• Zara (Dat) = Person receiving"
+                ],
+                "hindi_logic": "Jab hum sentence banate hain, teen roles hote hain: Kartā (Nom), Karma (Acc), Sampradāna (Dat). German mein article change hota hai case ke according."
+            },
+            {
+                "type": "table",
+                "title": "Case Identification: The Questions",
+                "headers": [
+                    "Case",
+                    "Question (German)",
+                    "Question (Hindi)",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Nominative",
+                        "Wer? (Who?)",
+                        "Kaun? (कौन?)",
+                        "Ali isst (Ali eats)"
+                    ],
+                    [
+                        "Accusative",
+                        "Wen/Was? (Whom/What?)",
+                        "Kisko/Kya? (किसको/क्या?)",
+                        "Ali isst einen Apfel (Ali eats an apple)"
+                    ],
+                    [
+                        "Dative",
+                        "Wem? (To whom?)",
+                        "Kisko? (किसको - milta hai)",
+                        "Ali gibt Zara einen Apfel (Ali gives Zara an apple)"
+                    ]
+                ],
+                "highlight_pattern": "Wer|Wen|Was|Wem"
+            },
+            {
+                "type": "table",
+                "title": "The Article Changes (Der/Die/Das Logic)",
+                "headers": [
+                    "Gender",
+                    "Nominative",
+                    "Accusative",
+                    "Dative"
+                ],
+                "rows": [
+                    [
+                        "Masculine",
+                        "Der Mann",
+                        "Den Mann",
+                        "Dem Mann"
+                    ],
+                    [
+                        "Feminine",
+                        "Die Frau",
+                        "Die Frau",
+                        "Der Frau"
+                    ],
+                    [
+                        "Neuter",
+                        "Das Kind",
+                        "Das Kind",
+                        "Dem Kind"
+                    ],
+                    [
+                        "Plural",
+                        "Die Leute",
+                        "Die Leute",
+                        "Den Leuten"
+                    ]
+                ],
+                "highlight_pattern": "Der|Den|Dem|Die"
+            },
+            {
+                "type": "scenarios",
+                "title": "Real-Life Scenarios with Hindi Logic",
+                "items": [
+                    {
+                        "situation": "Simple Action (Only Nominative + Accusative)",
+                        "german": "Ahmed kauft einen Laptop.",
+                        "english": "Ahmed buys a laptop.",
+                        "hindi": "Ahmed laptop kharidta hai.",
+                        "grammar_note": "Ahmed (Nom - Doer), einen Laptop (Acc - Thing bought). Laptop is Masculine (Der Laptop), so Accusative = Den → einen."
+                    },
+                    {
+                        "situation": "Giving Scenario (All Three Cases)",
+                        "german": "Kabir gibt seinem Bruder ein Geschenk.",
+                        "english": "Kabir gives his brother a gift.",
+                        "hindi": "Kabir apne bhai ko gift deta hai.",
+                        "grammar_note": "Kabir (Nom - Giver), seinem Bruder (Dat - Receiver). Why 'seinem'? 'Bruder' is Masculine, Dative Possessive = seinem. 'Ein Geschenk' (Acc - The Gift)."
+                    },
+                    {
+                        "situation": "Helping Scenario",
+                        "german": "Zara hilft ihrer Mutter.",
+                        "english": "Zara helps her mother.",
+                        "hindi": "Zara apni maa ki madad karti hai.",
+                        "grammar_note": "Zara (Nom), ihrer Mutter (Dat). Why Dative? Verb 'helfen' (to help) ALWAYS takes Dative. Mutter is Feminine, so Dative = ihrer."
+                    }
+                ]
+            },
+            {
+                "type": "tip",
+                "content": "🔑 KEY RULE: Masculine is the ONLY gender that changes in Accusative (Der → Den). Feminine and Neuter stay the same in Accusative!"
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_case_1",
+                "type": "multiple_choice",
+                "question": "Ali sieht ___ Mann. (Ali sees the man) - What case is 'Mann'?",
+                "options": [
+                    "Der Mann (Nom)",
+                    "Den Mann (Acc)",
+                    "Dem Mann (Dat)"
+                ],
+                "correct_answer": "Den Mann (Acc)",
+                "trap_explanation": "TRAP! You might think 'Der' because Mann is Masculine. But 'sehen' (to see) needs Accusative. Masculine Accusative = Den.",
+                "explanation": "Sehen (to see) takes Accusative object. Mann is Masculine, so Der → Den.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_case_2",
+                "type": "multiple_choice",
+                "question": "Ich gebe ___ Kind ein Buch. (I give the child a book) - What case is 'Kind'?",
+                "options": [
+                    "Das Kind (Nom)",
+                    "Das Kind (Acc)",
+                    "Dem Kind (Dat)"
+                ],
+                "correct_answer": "Dem Kind (Dat)",
+                "trap_explanation": "Kind is receiving the book. Receiver = Dative. Neuter Dative = Dem.",
+                "explanation": "Kind is the receiver (jisko milta hai), so Dative. Das → Dem.",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    {
+        "id": "deep_prepositions",
+        "title": "Prepositions: Motion vs Static (The 'In' Mystery Solved)",
+        "category": "Advanced Grammar",
+        "order": 51,
+        "description": "The complete logic of Two-Way Prepositions with real examples.",
+        "comparison_hint": {
+            "hindi": "English mein sirf 'In' bolte hain. German mein 'In' ke saath case change hota hai: Movement (A se B tak) = Accusative, Static Position (Wahan hai) = Dative.",
+            "english": "Prepositions can take either Accusative (motion) or Dative (location), depending on whether you're MOVING or STATIONARY."
+        },
+        "sections": [
+            {
+                "type": "deep_explanation",
+                "title": "The Logic of 'In' (Bahar se Andar vs Andar Hai)",
+                "content": "Why do we say 'In den Park' but 'In dem (Im) Park'?",
+                "logic_steps": [
+                    "1. 'In' = Inside an enclosed space (Park, School, etc.)",
+                    "2. Ask: Are we MOVING from Point A to Point B? (Wohin? - Where TO?)",
+                    "3. YES → ACCUSATIVE (In DEN Park) - Movement!",
+                    "4. NO, we're ALREADY there? (Wo? - Where?)",
+                    "5. Already there → DATIVE (In DEM/IM Park) - Static!",
+                    "WHY? Movement = Action happening TO the object = Accusative",
+                    "Static = Just location, no action = Dative"
+                ],
+                "hindi_logic": "Jab hum bahar se andar ja rahe hain (Movement), German 'Accusative' use karta hai. Jab hum already wahan hain (Static), 'Dative' use hota hai."
+            },
+            {
+                "type": "table",
+                "title": "Two-Way Prepositions (Wechselpräpositionen)",
+                "headers": [
+                    "Preposition",
+                    "Meaning",
+                    "Motion (Acc)",
+                    "Static (Dat)"
+                ],
+                "rows": [
+                    [
+                        "In",
+                        "In/Into",
+                        "In DEN Park (going INTO)",
+                        "In DEM Park (already INSIDE)"
+                    ],
+                    [
+                        "An",
+                        "On/At (vertical)",
+                        "An DIE Wand (putting ON wall)",
+                        "An DER Wand (already ON wall)"
+                    ],
+                    [
+                        "Auf",
+                        "On (horizontal)",
+                        "Auf DEN Tisch (putting ON table)",
+                        "Auf DEM Tisch (already ON table)"
+                    ],
+                    [
+                        "Über",
+                        "Over/Above",
+                        "Über DEN Fluss (going OVER)",
+                        "Über DEM Fluss (hovering OVER)"
+                    ],
+                    [
+                        "Unter",
+                        "Under",
+                        "Unter DEN Tisch (going UNDER)",
+                        "Unter DEM Tisch (already UNDER)"
+                    ],
+                    [
+                        "Vor",
+                        "In front of",
+                        "Vor DAS Haus (going IN FRONT)",
+                        "Vor DEM Haus (standing IN FRONT)"
+                    ],
+                    [
+                        "Hinter",
+                        "Behind",
+                        "Hinter DIE Tür (going BEHIND)",
+                        "Hinter DER Tür (already BEHIND)"
+                    ],
+                    [
+                        "Neben",
+                        "Next to",
+                        "Neben DEN Stuhl (moving NEXT TO)",
+                        "Neben DEM Stuhl (standing NEXT TO)"
+                    ],
+                    [
+                        "Zwischen",
+                        "Between",
+                        "Zwischen DIE Bäume (going BETWEEN)",
+                        "Zwischen DEN Bäumen (standing BETWEEN)"
+                    ]
+                ],
+                "highlight_pattern": "In|An|Auf|Über|Unter|Vor|Hinter|Neben|Zwischen"
+            },
+            {
+                "type": "scenarios",
+                "title": "Movement vs Static Examples",
+                "items": [
+                    {
+                        "situation": "Movement (Wohin? - Where to?)",
+                        "german": "Ali geht in die Schule.",
+                        "english": "Ali goes into the school.",
+                        "hindi": "Ali school ke andar ja raha hai.",
+                        "grammar_note": "Movement! Die Schule (Fem) stays 'Die' in Accusative. In + die = in die."
+                    },
+                    {
+                        "situation": "Static Position (Wo? - Where?)",
+                        "german": "Ali ist in der Schule.",
+                        "english": "Ali is in the school.",
+                        "hindi": "Ali school mein hai (already wahan hai).",
+                        "grammar_note": "Static! Dative. Feminine 'Die' changes to 'Der' in Dative. In + der = in der."
+                    },
+                    {
+                        "situation": "Movement (Masculine Example)",
+                        "german": "Ahmed stellt das Buch auf den Tisch.",
+                        "english": "Ahmed puts the book on the table.",
+                        "hindi": "Ahmed kitab table par rakh raha hai.",
+                        "grammar_note": "Movement (putting)! Accusative. Tisch (Masc): Der → Den. Auf + den = auf den."
+                    },
+                    {
+                        "situation": "Static (Masculine Example)",
+                        "german": "Das Buch liegt auf dem Tisch.",
+                        "english": "The book is lying on the table.",
+                        "hindi": "Kitab table par padi hui hai.",
+                        "grammar_note": "Static (already there)! Dative. Masculine: Der → Dem. Auf + dem = auf dem."
+                    }
+                ]
+            },
+            {
+                "type": "table",
+                "title": "Accusative-ONLY Prepositions (FUDOG Mnemonic)",
+                "headers": [
+                    "Preposition",
+                    "Meaning",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Für",
+                        "For",
+                        "Für meinen Bruder (For my brother - Acc)"
+                    ],
+                    [
+                        "Um",
+                        "Around/At (time)",
+                        "Um den Park (Around the park - Acc)"
+                    ],
+                    [
+                        "Durch",
+                        "Through",
+                        "Durch die Stadt (Through the city - Acc)"
+                    ],
+                    [
+                        "Ohne",
+                        "Without",
+                        "Ohne dich (Without you - Acc)"
+                    ],
+                    [
+                        "Gegen",
+                        "Against",
+                        "Gegen den Wind (Against the wind - Acc)"
+                    ]
+                ],
+                "highlight_pattern": "Für|Um|Durch|Ohne|Gegen"
+            },
+            {
+                "type": "table",
+                "title": "Dative-ONLY Prepositions (Blue Zebra Mnemonic)",
+                "headers": [
+                    "Preposition",
+                    "Meaning",
+                    "Example"
+                ],
+                "rows": [
+                    [
+                        "Aus",
+                        "Out of/From",
+                        "Aus dem Haus (Out of the house - Dat)"
+                    ],
+                    [
+                        "Außer",
+                        "Except",
+                        "Außer mir (Except me - Dat)"
+                    ],
+                    [
+                        "Bei",
+                        "At/Near",
+                        "Bei meinem Freund (At my friend's - Dat)"
+                    ],
+                    [
+                        "Mit",
+                        "With",
+                        "Mit dem Auto (With/By car - Dat)"
+                    ],
+                    [
+                        "Nach",
+                        "After/To",
+                        "Nach der Schule (After school - Dat)"
+                    ],
+                    [
+                        "Seit",
+                        "Since",
+                        "Seit einem Jahr (Since a year - Dat)"
+                    ],
+                    [
+                        "Von",
+                        "From/Of",
+                        "Von meiner Mutter (From my mother - Dat)"
+                    ],
+                    [
+                        "Zu",
+                        "To",
+                        "Zu dem (Zum) Arzt (To the doctor - Dat)"
+                    ]
+                ],
+                "highlight_pattern": "Aus|Außer|Bei|Mit|Nach|Seit|Von|Zu"
+            },
+            {
+                "type": "tip",
+                "content": "🎯 MASTER TIP: 'Mit' (With) ALWAYS takes Dative because you're WITH someone/something (together). Think: Mit mir (With me - Dat), Mit dem Bus (By bus - Dat)."
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_prep_1",
+                "type": "multiple_choice",
+                "question": "Ich gehe ___ Park. (I'm going into the park)",
+                "options": [
+                    "in der Park",
+                    "in den Park",
+                    "in dem Park"
+                ],
+                "correct_answer": "in den Park",
+                "trap_explanation": "Movement! You're going FROM outside TO inside. Movement = Accusative. Park (Masc): Der → Den.",
+                "explanation": "Gehen (going) = Movement. Accusative. Park is Masculine: in den Park.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_prep_2",
+                "type": "multiple_choice",
+                "question": "Ich bin ___ Park. (I am in the park)",
+                "options": [
+                    "in der Park",
+                    "in den Park",
+                    "in dem (im) Park"
+                ],
+                "correct_answer": "in dem (im) Park",
+                "trap_explanation": "Static! You're ALREADY there, not moving. Static = Dative. Masculine: in dem (contracted: im).",
+                "explanation": "Bin (am) = Static position. Dative. Masculine: in dem → im Park.",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_prep_3",
+                "type": "multiple_choice",
+                "question": "Das Geschenk ist für ___. (The gift is for me)",
+                "options": [
+                    "ich",
+                    "mich",
+                    "mir"
+                ],
+                "correct_answer": "mich",
+                "trap_explanation": "'Für' ALWAYS takes Accusative. Ich (Nom) → mich (Acc).",
+                "explanation": "Für = Accusative-only preposition. For me = für mich (Acc).",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_prep_4",
+                "type": "multiple_choice",
+                "question": "Ich fahre mit ___. (I'm traveling with you)",
+                "options": [
+                    "du",
+                    "dich",
+                    "dir"
+                ],
+                "correct_answer": "dir",
+                "trap_explanation": "'Mit' ALWAYS takes Dative. Du (Nom) → dir (Dat).",
+                "explanation": "Mit = Dative-only. With you = mit dir (Dat).",
+                "difficulty": "easy"
+            }
+        ]
+    },
+    {
+        "id": "deep_pronouns",
+        "title": "Pronouns: The Complete Table (Ich/Mich/Mir System)",
+        "category": "Advanced Grammar",
+        "order": 52,
+        "description": "Master all pronoun forms across all cases with Hindi logic.",
+        "comparison_hint": {
+            "hindi": "Hindi mein 'Main/Mujhe/Mujhko' hote hain. German mein 'Ich/Mich/Mir' hote hain.",
+            "english": "Pronouns change based on their role: I (Subject), Me (Direct Object), To Me (Indirect Object)."
+        },
+        "sections": [
+            {
+                "type": "table",
+                "title": "Complete Pronoun Declension Table",
+                "headers": [
+                    "English",
+                    "Nominative (Subject)",
+                    "Accusative (Direct Obj)",
+                    "Dative (Indirect Obj)"
+                ],
+                "rows": [
+                    [
+                        "I/Me",
+                        "Ich (Main)",
+                        "Mich (Mujhe)",
+                        "Mir (Mujhko)"
+                    ],
+                    [
+                        "You (informal)",
+                        "Du (Tum)",
+                        "Dich (Tujhe)",
+                        "Dir (Tujhko)"
+                    ],
+                    [
+                        "He/Him",
+                        "Er (Woh - ladka)",
+                        "Ihn (Use)",
+                        "Ihm (Usko)"
+                    ],
+                    [
+                        "She/Her",
+                        "Sie (Woh - ladki)",
+                        "Sie (Use)",
+                        "Ihr (Usko)"
+                    ],
+                    [
+                        "It",
+                        "Es (Woh - cheez)",
+                        "Es (Use)",
+                        "Ihm (Usko)"
+                    ],
+                    [
+                        "We/Us",
+                        "Wir (Hum)",
+                        "Uns (Humein)",
+                        "Uns (Humko)"
+                    ],
+                    [
+                        "You all",
+                        "Ihr (Tum sab)",
+                        "Euch (Tum sabko)",
+                        "Euch (Tum sabko)"
+                    ],
+                    [
+                        "They/Them",
+                        "Sie (Ve)",
+                        "Sie (Unhe)",
+                        "Ihnen (Unko)"
+                    ],
+                    [
+                        "You (Formal)",
+                        "Sie (Aap)",
+                        "Sie (Aapko)",
+                        "Ihnen (Aapko)"
+                    ]
+                ],
+                "highlight_pattern": "Ich|Mich|Mir|Du|Dich|Dir|Er|Ihn|Ihm"
+            },
+            {
+                "type": "deep_explanation",
+                "title": "Understanding 'Für mich' vs 'Mit mir'",
+                "content": "Why 'For ME' but 'With ME' use different words?",
+                "logic_steps": [
+                    "1. Für (For) = Accusative-only preposition",
+                    "2. Mit (With) = Dative-only preposition",
+                    "3. Ich (I) → mich (Acc) → mir (Dat)",
+                    "4. Result: Für mich (For me - Acc), Mit mir (With me - Dat)"
+                ],
+                "hindi_logic": "'Mere liye' = Für mich (Acc). 'Mere saath' = Mit mir (Dat). Preposition ke hisaab se pronoun change hota hai."
+            },
+            {
+                "type": "scenarios",
+                "title": "Pronoun Usage Examples",
+                "items": [
+                    {
+                        "situation": "Nominative (Subject)",
+                        "german": "Ich sehe dich.",
+                        "english": "I see you.",
+                        "hindi": "Main tujhe dekhta hoon.",
+                        "grammar_note": "Ich (Nom - Subject/Doer), dich (Acc - Direct Object)."
+                    },
+                    {
+                        "situation": "Accusative (Direct Object)",
+                        "german": "Ahmed liebt mich.",
+                        "english": "Ahmed loves me.",
+                        "hindi": "Ahmed mujhe pyaar karta hai.",
+                        "grammar_note": "Mich (Acc - Direct object of love)."
+                    },
+                    {
+                        "situation": "Dative (Indirect Object)",
+                        "german": "Zara gibt mir ein Buch.",
+                        "english": "Zara gives me a book.",
+                        "hindi": "Zara mujhe kitab deti hai.",
+                        "grammar_note": "Mir (Dat - Receiver of the book). Ein Buch (Acc - The thing given)."
+                    },
+                    {
+                        "situation": "Accusative Preposition",
+                        "german": "Das Geschenk ist für dich.",
+                        "english": "The gift is for you.",
+                        "hindi": "Yeh gift tere liye hai.",
+                        "grammar_note": "Für (For) = Acc-only. Du → dich."
+                    },
+                    {
+                        "situation": "Dative Preposition",
+                        "german": "Ich komme mit dir.",
+                        "english": "I'm coming with you.",
+                        "hindi": "Main tere saath aa raha hoon.",
+                        "grammar_note": "Mit (With) = Dat-only. Du → dir."
+                    },
+                    {
+                        "situation": "Helping Verb (Dative)",
+                        "german": "Kabir hilft mir.",
+                        "english": "Kabir helps me.",
+                        "hindi": "Kabir meri madad karta hai.",
+                        "grammar_note": "Helfen (to help) ALWAYS takes Dative object. Ich → mir."
+                    }
+                ]
+            },
+            {
+                "type": "tip",
+                "content": "💡 MEMORY TRICK: Accusative sounds like 'Action' - it's the direct target of action. Dative is the 'Receiver/Beneficiary' (jisko milta hai)."
+            }
+        ],
+        "quiz": [
+            {
+                "id": "q_pron_1",
+                "type": "multiple_choice",
+                "question": "Siehst du ___? (Do you see me?)",
+                "options": [
+                    "ich",
+                    "mich",
+                    "mir"
+                ],
+                "correct_answer": "mich",
+                "trap_explanation": "Sehen (to see) takes Accusative object. Ich → mich.",
+                "explanation": "Direct object of 'seeing' = Accusative. Siehst du mich?",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_pron_2",
+                "type": "multiple_choice",
+                "question": "Kannst du ___ helfen? (Can you help me?)",
+                "options": [
+                    "ich",
+                    "mich",
+                    "mir"
+                ],
+                "correct_answer": "mir",
+                "trap_explanation": "TRAP! Helfen (help) ALWAYS takes Dative, not Accusative. Ich → mir.",
+                "explanation": "Helfen = Dative verb. Can you help me? = Kannst du mir helfen?",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_pron_3",
+                "type": "fill_blank",
+                "question": "Ich fahre mit ___. (I travel with him)",
+                "options": [
+                    "er",
+                    "ihn",
+                    "ihm"
+                ],
+                "correct_answer": "ihm",
+                "trap_explanation": "Mit = Dative-only. Er (he) → ihm (Dat).",
+                "explanation": "Mit (with) takes Dative. Mit ihm (with him).",
+                "difficulty": "medium"
+            },
+            {
+                "id": "q_pron_4",
+                "type": "multiple_choice",
+                "question": "Das ist für ___. (This is for her)",
+                "options": [
+                    "sie",
+                    "sie",
+                    "ihr"
+                ],
+                "correct_answer": "sie",
+                "trap_explanation": "Für = Accusative. Sie (she) stays 'sie' in Accusative.",
+                "explanation": "Für (for) = Accusative-only. For her = für sie (Acc).",
+                "difficulty": "easy"
+            },
+            {
+                "id": "q_pron_5",
+                "type": "multiple_choice",
+                "question": "Ich gebe ___ das Buch. (I give you the book)",
+                "options": [
+                    "du",
+                    "dich",
+                    "dir"
+                ],
+                "correct_answer": "dir",
+                "trap_explanation": "Geben (to give) has TWO objects: dir (Dat - receiver), das Buch (Acc - thing given).",
+                "explanation": "Geben takes Dative for receiver. I give YOU = dir.",
+                "difficulty": "medium"
+            }
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1005,
+    "german": "das Lokal",
+    "english": "the pub / restaurant / local place",
+    "category": "Leisure"
+  },
+  {
+    "id": 1008,
+    "german": "das Wasser",
+    "english": "the water",
+    "category": "Food"
+  },
+  {
+    "id": 1041,
+    "german": "gestorben",
+    "english": "died / dead",
+    "category": "Life"
+  },
+  {
+    "id": 1043,
+    "german": "heiraten",
+    "english": "to marry",
+    "category": "Family"
+  },
+  {
+    "id": 1044,
+    "german": "heißen",
+    "english": "to be called / named",
+    "category": "Identity"
+  },
+  {
+    "id": 1046,
+    "german": "kulturell",
+    "english": "cultural",
+    "category": "Culture"
+  },
+  {
+    "id": 1048,
+    "german": "links",
+    "english": "left",
+    "category": "Directions"
+  },
+  {
+    "id": 1050,
+    "german": "möchten",
+    "english": "would like",
+    "category": "General"
+  },
+  {
+    "id": 1052,
+    "german": "Rad fahren",
+    "english": "to ride a bike",
+    "category": "Sports"
+  },
+  {
+    "id": 1053,
+    "german": "selbstständig",
+    "english": "independent / self-employed",
+    "category": "Work"
+  },
+  {
+    "id": 1057,
+    "german": "umziehen",
+    "english": "to move (house) / change clothes",
+    "category": "Life"
+  }
+]
