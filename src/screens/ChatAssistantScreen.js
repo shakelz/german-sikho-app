@@ -48,11 +48,30 @@ const ChatAssistantScreen = () => {
 
         try {
             const execution = await functions.createExecution(
-                '693fe81a49620de1fe21',
+                '693ff74500065eaf74e1', // Function ID from Appwrite Functions list
                 JSON.stringify({ userMessage: inputText.trim() })
             );
 
+            // Debug: Log the execution response
+            console.log('Execution status:', execution.status);
+            console.log('Response body:', execution.responseBody);
+            console.log('Response errors:', execution.errors);
+
+            // Check for execution errors
+            if (execution.status === 'failed' || execution.errors) {
+                throw new Error(execution.errors || 'Function execution failed');
+            }
+
+            // Handle empty response
+            if (!execution.responseBody) {
+                throw new Error('Empty response from function');
+            }
+
             const response = JSON.parse(execution.responseBody);
+
+            if (response.error) {
+                throw new Error(response.error);
+            }
 
             if (response.reply) {
                 const botMessage = {
@@ -62,6 +81,8 @@ const ChatAssistantScreen = () => {
                     timestamp: new Date(),
                 };
                 setMessages(prev => [...prev, botMessage]);
+            } else {
+                throw new Error('No reply in response');
             }
         } catch (error) {
             console.error("Chat Error:", error);
