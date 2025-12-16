@@ -1,6 +1,8 @@
 {
     "name": "chat-bot",
     "version": "1.0.0",
+    "main": "main.js",
+    "type": "commonjs",
     "dependencies": {
         "groq-sdk": "^0.3.3"
     }
