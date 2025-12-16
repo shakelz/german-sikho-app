@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import {
     View,
     Text,
@@ -18,6 +18,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import LinearGradient from 'react-native-linear-gradient';
 import { Client, Functions } from 'appwrite';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // --- CONFIG ---
 const client = new Client()
@@ -26,25 +27,70 @@ const client = new Client()
 const functions = new Functions(client);
 
 // --- ASSETS ---
-// Ensure these paths match your project structure
 const homeBg = require('../assets/icons/home_bg.png');
 const BOT_AVATAR = require('../../assets/chatBotIcon.png');
 
+// --- STORAGE KEY ---
+const CHAT_STORAGE_KEY = 'professor_bar_chat_history';
+
 const ChatAssistantScreen = ({ navigation }) => {
-    const [messages, setMessages] = useState([
-        {
-            id: '1',
-            text: 'Willkommen! 🐻 I am Professor Bär, your German tutor. Ready to master some vocabulary?',
-            isBot: true,
-            timestamp: new Date(),
-        },
-    ]);
+    // Default welcome message
+    const defaultWelcome = {
+        id: '1',
+        text: 'Willkommen! 🐻 I am Professor Bär, your German tutor. Ready to master some vocabulary?',
+        isBot: true,
+        timestamp: new Date(),
+    };
+
+    const [messages, setMessages] = useState([defaultWelcome]);
     const [inputText, setInputText] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [keyboardHeight, setKeyboardHeight] = useState(0);
+    const [isHistoryLoaded, setIsHistoryLoaded] = useState(false);
     const flatListRef = useRef(null);
     const inputRef = useRef(null);
     const fadeAnim = useRef(new Animated.Value(0)).current;
+
+    // ==================== PERSISTENCE: LOAD ON STARTUP ====================
+    useEffect(() => {
+        const loadChatHistory = async () => {
+            try {
+                const saved = await AsyncStorage.getItem(CHAT_STORAGE_KEY);
+                if (saved) {
+                    const parsed = JSON.parse(saved);
+                    if (parsed && parsed.length > 0) {
+                        // Convert timestamp strings back to Date objects for display
+                        const restored = parsed.map(msg => ({
+                            ...msg,
+                            timestamp: new Date(msg.timestamp)
+                        }));
+                        setMessages(restored);
+                        console.log('📂 Loaded', restored.length, 'messages from storage');
+                    }
+                }
+            } catch (error) {
+                console.error('Failed to load chat history:', error);
+            } finally {
+                setIsHistoryLoaded(true);
+            }
+        };
+        loadChatHistory();
+    }, []);
+
+    // ==================== PERSISTENCE: SAVE HELPER ====================
+    const saveChatHistory = useCallback(async (messageList) => {
+        try {
+            // Save timestamps as ISO strings for proper JSON serialization
+            const toSave = messageList.map(msg => ({
+                ...msg,
+                timestamp: msg.timestamp instanceof Date ? msg.timestamp.toISOString() : msg.timestamp
+            }));
+            await AsyncStorage.setItem(CHAT_STORAGE_KEY, JSON.stringify(toSave));
+            console.log('💾 Saved', toSave.length, 'messages to storage');
+        } catch (error) {
+            console.error('Failed to save chat history:', error);
+        }
+    }, []);
 
     // Handle keyboard show/hide for Android
     useEffect(() => {
@@ -77,12 +123,12 @@ const ChatAssistantScreen = ({ navigation }) => {
         }).start();
     }, []);
 
-    // --- MAIN SEND FUNCTION (Context Aware) ---
+    // --- MAIN SEND FUNCTION (Context Aware + Persistent) ---
     const sendMessage = async () => {
         // 1. Validation
         if (!inputText.trim() || isLoading) return;
 
-        const currentText = inputText.trim(); // Capture text before clearing
+        const currentText = inputText.trim();
         const userMessage = {
             id: Date.now().toString(),
             text: currentText,
@@ -90,32 +136,36 @@ const ChatAssistantScreen = ({ navigation }) => {
             timestamp: new Date(),
         };
 
-        // 2. Update UI Immediately
-        setMessages(prev => [...prev, userMessage]);
+        // 2. Update UI Immediately & Save
+        const updatedWithUser = [...messages, userMessage];
+        setMessages(updatedWithUser);
         setInputText('');
         setIsLoading(true);
+        await saveChatHistory(updatedWithUser); // 💾 SAVE after user message
 
-        // Keep keyboard open by refocusing input
+        // Keep keyboard open
         setTimeout(() => inputRef.current?.focus(), 50);
-
-        // Scroll to bottom immediately
         setTimeout(() => flatListRef.current?.scrollToEnd({ animated: true }), 100);
 
-        // 3. Prepare History Context for AI
-        // Take the last 6 messages so the bot remembers the conversation
-        const historyContext = messages.slice(-6).map(msg => ({
-            role: msg.isBot ? 'assistant' : 'user', // Map internal boolean to API string
+        // 3. Prepare History Context for AI (Last 10 messages only)
+        const historyContext = updatedWithUser.slice(-10).map(msg => ({
+            role: msg.isBot ? 'assistant' : 'user',
             content: msg.text
         }));
 
-        // Add the message you just typed to the end of that history
-        historyContext.push({ role: 'user', content: currentText });
-
         try {
-            // 4. Send History to Appwrite
+            // 4. Send to Appwrite with userStats
             const execution = await functions.createExecution(
-                '694129dd000963fdd432', // Your Function ID
-                JSON.stringify({ history: historyContext }) // Sending ARRAY now
+                '694129dd000963fdd432',
+                JSON.stringify({
+                    history: historyContext,
+                    userStats: {
+                        level: 'A1',
+                        vocabCount: 50,
+                        weakTopics: [],
+                        interests: 'General'
+                    }
+                })
             );
 
             if (execution.status === 'failed') throw new Error('Failed');
@@ -129,25 +179,32 @@ const ChatAssistantScreen = ({ navigation }) => {
                     isBot: true,
                     timestamp: new Date(),
                 };
-                setMessages(prev => [...prev, botMessage]);
+                const finalList = [...updatedWithUser, botMessage];
+                setMessages(finalList);
+                await saveChatHistory(finalList); // 💾 SAVE after bot reply
             }
         } catch (error) {
-            console.error("Chat Error:", error);
+            console.error('Chat Error:', error);
             const errorMessage = {
                 id: (Date.now() + 1).toString(),
-                text: "Verbindungsprobleme... ⚠️ I lost the connection. Please try again.",
+                text: 'Verbindungsprobleme... ⚠️ I lost the connection. Please try again.',
                 isBot: true,
                 timestamp: new Date(),
             };
-            setMessages(prev => [...prev, errorMessage]);
+            const errorList = [...updatedWithUser, errorMessage];
+            setMessages(errorList);
+            await saveChatHistory(errorList); // 💾 SAVE error message too
         } finally {
             setIsLoading(false);
-            // Refocus input to keep keyboard open
             setTimeout(() => inputRef.current?.focus(), 100);
         }
     };
 
-    const formatTime = (date) => date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    // Helper to format time - handles both Date objects and ISO strings
+    const formatTime = (date) => {
+        const d = date instanceof Date ? date : new Date(date);
+        return d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    };
 
     const renderMessage = ({ item }) => (
         <Animated.View style={[
