@@ -70,7 +70,7 @@ const AppStack = () => {
                     component={ChatAssistantScreen}
                     options={{
                         headerShown: true,
-                        title: 'AI Tutor 🇩🇪',
+                        title: 'Professor Bär 🐻',
                         headerStyle: { backgroundColor: '#0F172A' },
                         headerTintColor: '#fff',
                         headerTitleStyle: { fontWeight: 'bold' },

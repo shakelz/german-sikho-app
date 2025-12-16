@@ -34,7 +34,7 @@ const ChatAssistantScreen = ({ navigation }) => {
     const [messages, setMessages] = useState([
         {
             id: '1',
-            text: 'Willkommen! 🇩🇪 I am your AI German tutor. Ready to master some vocabulary?',
+            text: 'Willkommen! 🐻 I am Professor Bär, your German tutor. Ready to master some vocabulary?',
             isBot: true,
             timestamp: new Date(),
         },
