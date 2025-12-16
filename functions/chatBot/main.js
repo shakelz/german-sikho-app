@@ -30,7 +30,7 @@ module.exports = async ({ req, res, log, error }) => {
                 { role: "system", content: "You are a helpful German language tutor. Keep answers short." },
                 { role: "user", content: userMessage },
             ],
-            model: "llama-3.3-70b-versatile",
+            model: "llama-3.1-8b-instant",
         });
 
         const reply = completion.choices[0]?.message?.content || "No reply";
