@@ -13,7 +13,7 @@ import {
     ImageBackground,
     StatusBar,
     Animated,
-    Dimensions
+    Keyboard
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import LinearGradient from 'react-native-linear-gradient';
@@ -22,11 +22,11 @@ import { Client, Functions } from 'appwrite';
 // --- CONFIG ---
 const client = new Client()
     .setEndpoint('https://fra.cloud.appwrite.io/v1')
-    .setProject('692c8c1f002809245709');
+    .setProject('692c8c1f002809245709'); // Your Project ID
 const functions = new Functions(client);
 
 // --- ASSETS ---
-// Use the same background as the previous screen for consistency
+// Ensure these paths match your project structure
 const homeBg = require('../assets/icons/home_bg.png');
 const BOT_AVATAR = require('../../assets/chatBotIcon.png');
 
@@ -41,8 +41,32 @@ const ChatAssistantScreen = ({ navigation }) => {
     ]);
     const [inputText, setInputText] = useState('');
     const [isLoading, setIsLoading] = useState(false);
+    const [keyboardHeight, setKeyboardHeight] = useState(0);
     const flatListRef = useRef(null);
+    const inputRef = useRef(null);
     const fadeAnim = useRef(new Animated.Value(0)).current;
+
+    // Handle keyboard show/hide for Android
+    useEffect(() => {
+        const keyboardDidShowListener = Keyboard.addListener(
+            Platform.OS === 'ios' ? 'keyboardWillShow' : 'keyboardDidShow',
+            (e) => {
+                setKeyboardHeight(e.endCoordinates.height);
+                setTimeout(() => flatListRef.current?.scrollToEnd({ animated: true }), 100);
+            }
+        );
+        const keyboardDidHideListener = Keyboard.addListener(
+            Platform.OS === 'ios' ? 'keyboardWillHide' : 'keyboardDidHide',
+            () => {
+                setKeyboardHeight(0);
+            }
+        );
+
+        return () => {
+            keyboardDidShowListener.remove();
+            keyboardDidHideListener.remove();
+        };
+    }, []);
 
     // Fade in effect on mount
     useEffect(() => {
@@ -53,30 +77,49 @@ const ChatAssistantScreen = ({ navigation }) => {
         }).start();
     }, []);
 
+    // --- MAIN SEND FUNCTION (Context Aware) ---
     const sendMessage = async () => {
+        // 1. Validation
         if (!inputText.trim() || isLoading) return;
 
+        const currentText = inputText.trim(); // Capture text before clearing
         const userMessage = {
             id: Date.now().toString(),
-            text: inputText.trim(),
+            text: currentText,
             isBot: false,
             timestamp: new Date(),
         };
 
+        // 2. Update UI Immediately
         setMessages(prev => [...prev, userMessage]);
         setInputText('');
         setIsLoading(true);
 
+        // Keep keyboard open by refocusing input
+        setTimeout(() => inputRef.current?.focus(), 50);
+
         // Scroll to bottom immediately
         setTimeout(() => flatListRef.current?.scrollToEnd({ animated: true }), 100);
 
+        // 3. Prepare History Context for AI
+        // Take the last 6 messages so the bot remembers the conversation
+        const historyContext = messages.slice(-6).map(msg => ({
+            role: msg.isBot ? 'assistant' : 'user', // Map internal boolean to API string
+            content: msg.text
+        }));
+
+        // Add the message you just typed to the end of that history
+        historyContext.push({ role: 'user', content: currentText });
+
         try {
+            // 4. Send History to Appwrite
             const execution = await functions.createExecution(
-                '694129dd000963fdd432',
-                JSON.stringify({ userMessage: inputText.trim() })
+                '694129dd000963fdd432', // Your Function ID
+                JSON.stringify({ history: historyContext }) // Sending ARRAY now
             );
 
-            if (execution.status === 'failed' || execution.errors) throw new Error('Failed');
+            if (execution.status === 'failed') throw new Error('Failed');
+
             const response = JSON.parse(execution.responseBody);
 
             if (response.reply) {
@@ -89,15 +132,18 @@ const ChatAssistantScreen = ({ navigation }) => {
                 setMessages(prev => [...prev, botMessage]);
             }
         } catch (error) {
+            console.error("Chat Error:", error);
             const errorMessage = {
                 id: (Date.now() + 1).toString(),
-                text: "Verbindungsprobleme... ⚠️ Let's try that again.",
+                text: "Verbindungsprobleme... ⚠️ I lost the connection. Please try again.",
                 isBot: true,
                 timestamp: new Date(),
             };
             setMessages(prev => [...prev, errorMessage]);
         } finally {
             setIsLoading(false);
+            // Refocus input to keep keyboard open
+            setTimeout(() => inputRef.current?.focus(), 100);
         }
     };
 
@@ -107,7 +153,7 @@ const ChatAssistantScreen = ({ navigation }) => {
         <Animated.View style={[
             styles.messageRow,
             item.isBot ? styles.botRow : styles.userRow,
-            { opacity: fadeAnim } // Subtle entry animation support
+            { opacity: fadeAnim }
         ]}>
             {item.isBot && (
                 <View style={styles.botAvatarContainer}>
@@ -142,6 +188,7 @@ const ChatAssistantScreen = ({ navigation }) => {
         </Animated.View>
     );
 
+    // Auto-scroll when messages change
     useEffect(() => {
         if (flatListRef.current && messages.length > 0) {
             setTimeout(() => flatListRef.current?.scrollToEnd({ animated: true }), 200);
@@ -160,78 +207,60 @@ const ChatAssistantScreen = ({ navigation }) => {
                 />
             </ImageBackground>
 
-            <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
-                <KeyboardAvoidingView
-                    style={styles.keyboardContainer}
-                    behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-                    keyboardVerticalOffset={Platform.OS === 'ios' ? 10 : 0}
-                >
-                    {/* 2. CUSTOM HEADER */}
-                    <View style={styles.header}>
-                        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
-                            <Text style={styles.backArrow}>←</Text>
-                        </TouchableOpacity>
-                        <View>
-                            <Text style={styles.headerTitle}>AI Tutor</Text>
-                            <View style={styles.statusContainer}>
-                                <View style={styles.statusDot} />
-                                <Text style={styles.statusText}>Online</Text>
-                            </View>
+            <View style={[styles.keyboardContainer, { paddingBottom: keyboardHeight }]}>
+                {/* MESSAGES */}
+                <FlatList
+                    ref={flatListRef}
+                    data={messages}
+                    renderItem={renderMessage}
+                    keyExtractor={item => item.id}
+                    contentContainerStyle={styles.messagesList}
+                    showsVerticalScrollIndicator={false}
+                    keyboardShouldPersistTaps="handled"
+                />
+
+                {/* 4. TYPING INDICATOR */}
+                {isLoading && (
+                    <View style={styles.typingContainer}>
+                        <View style={styles.typingGlass}>
+                            <ActivityIndicator size="small" color="#3B82F6" />
+                            <Text style={styles.typingText}>AI is thinking...</Text>
                         </View>
-                        <View style={{ width: 40 }} />
                     </View>
+                )}
 
-                    {/* 3. MESSAGES */}
-                    <FlatList
-                        ref={flatListRef}
-                        data={messages}
-                        renderItem={renderMessage}
-                        keyExtractor={item => item.id}
-                        contentContainerStyle={styles.messagesList}
-                        showsVerticalScrollIndicator={false}
-                    />
-
-                    {/* 4. TYPING INDICATOR */}
-                    {isLoading && (
-                        <View style={styles.typingContainer}>
-                            <View style={styles.typingGlass}>
-                                <ActivityIndicator size="small" color="#3B82F6" />
-                                <Text style={styles.typingText}>AI is thinking...</Text>
-                            </View>
-                        </View>
-                    )}
-
-                    {/* 5. FLOATING INPUT BAR */}
-                    <View style={styles.inputWrapper}>
-                        <View style={styles.inputGlassContainer}>
-                            <TextInput
-                                style={styles.textInput}
-                                value={inputText}
-                                onChangeText={setInputText}
-                                placeholder="Ask about German..."
-                                placeholderTextColor="#64748B"
-                                multiline
-                                maxLength={500}
-                                editable={!isLoading}
-                            />
-                            <TouchableOpacity
-                                style={[styles.sendButton, (!inputText.trim() || isLoading) && styles.sendButtonDisabled]}
-                                onPress={sendMessage}
-                                disabled={!inputText.trim() || isLoading}
-                                activeOpacity={0.8}
+                {/* 5. FLOATING INPUT BAR */}
+                <View style={styles.inputWrapper}>
+                    <View style={styles.inputGlassContainer}>
+                        <TextInput
+                            ref={inputRef}
+                            style={styles.textInput}
+                            value={inputText}
+                            onChangeText={setInputText}
+                            placeholder="Ask about German..."
+                            placeholderTextColor="#64748B"
+                            multiline
+                            maxLength={500}
+                            blurOnSubmit={false}
+                            returnKeyType="send"
+                        />
+                        <TouchableOpacity
+                            style={[styles.sendButton, (!inputText.trim() || isLoading) && styles.sendButtonDisabled]}
+                            onPress={sendMessage}
+                            disabled={!inputText.trim() || isLoading}
+                            activeOpacity={0.8}
+                        >
+                            <LinearGradient
+                                colors={inputText.trim() ? ['#3B82F6', '#1D4ED8'] : ['#334155', '#1e293b']}
+                                style={styles.sendGradient}
                             >
-                                <LinearGradient
-                                    colors={inputText.trim() ? ['#3B82F6', '#1D4ED8'] : ['#334155', '#1e293b']}
-                                    style={styles.sendGradient}
-                                >
-                                    <Text style={styles.sendIcon}>↑</Text>
-                                </LinearGradient>
-                            </TouchableOpacity>
-                        </View>
+                                <Text style={styles.sendIcon}>↑</Text>
+                            </LinearGradient>
+                        </TouchableOpacity>
                     </View>
+                </View>
 
-                </KeyboardAvoidingView>
-            </SafeAreaView>
+            </View>
         </View>
     );
 };
@@ -355,6 +384,9 @@ const styles = StyleSheet.create({
         width: 44, height: 44,
         borderRadius: 22,
         overflow: 'hidden',
+    },
+    sendButtonDisabled: {
+        opacity: 0.5,
     },
     sendGradient: {
         flex: 1,

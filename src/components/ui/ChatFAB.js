@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     fabInner: {
         width: 56,
         height: 56,
-        borderRadius: 28,
+        borderRadius: 10,
         backgroundColor: '#58CC02',
         justifyContent: 'center',
         alignItems: 'center',
@@ -58,8 +58,8 @@ const styles = StyleSheet.create({
         borderColor: 'rgba(255,255,255,0.3)',
     },
     fabIcon: {
-        width: 36,
-        height: 36,
+        width: 60,
+        height: 60,
         borderRadius: 18,
     },
 });

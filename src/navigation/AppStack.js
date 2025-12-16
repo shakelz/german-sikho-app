@@ -71,7 +71,7 @@ const AppStack = () => {
                     options={{
                         headerShown: true,
                         title: 'AI Tutor 🇩🇪',
-                        headerStyle: { backgroundColor: '#58CC02' },
+                        headerStyle: { backgroundColor: '#0F172A' },
                         headerTintColor: '#fff',
                         headerTitleStyle: { fontWeight: 'bold' },
                     }}
