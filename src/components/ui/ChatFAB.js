@@ -1,5 +1,8 @@
 import React from 'react';
-import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
+import { TouchableOpacity, StyleSheet, View, Image } from 'react-native';
+
+// Custom Chat Bot Icon
+const CHAT_BOT_ICON = require('../../../assets/chatBotIcon.png');
 
 /**
  * ChatFAB - Floating Action Button for AI Chat Assistant
@@ -18,7 +21,7 @@ const ChatFAB = ({ navigation }) => {
             activeOpacity={0.85}
         >
             <View style={styles.fabInner}>
-                <Text style={styles.fabIcon}>🤖</Text>
+                <Image source={CHAT_BOT_ICON} style={styles.fabIcon} />
             </View>
         </TouchableOpacity>
     );
@@ -55,8 +58,11 @@ const styles = StyleSheet.create({
         borderColor: 'rgba(255,255,255,0.3)',
     },
     fabIcon: {
-        fontSize: 28,
+        width: 36,
+        height: 36,
+        borderRadius: 18,
     },
 });
 
 export default ChatFAB;
+

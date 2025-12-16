@@ -14,29 +14,32 @@ module.exports = async ({ req, res, log, error }) => {
     });
 
     try {
-        // 3. Parse Message
-        let userMessage = "Hello"; // Default for safety
+        // 3. Parse Body
+        let conversation = [];
 
         if (req.body) {
-            // Handle if body is already an object or a string
             const bodyData = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
-            if (bodyData.userMessage) {
-                userMessage = bodyData.userMessage;
+
+            // Check if we received a history array
+            if (bodyData.history && Array.isArray(bodyData.history)) {
+                conversation = bodyData.history;
+            } else if (bodyData.userMessage) {
+                // Fallback for old app version (single message)
+                conversation = [{ role: "user", content: bodyData.userMessage }];
             }
         }
 
-        // 4. Call AI
+        // 4. Call AI (Prepend System Prompt + History)
         const completion = await groq.chat.completions.create({
             messages: [
                 { role: "system", content: "You are a helpful German language tutor. Keep answers short." },
-                { role: "user", content: userMessage },
+                ...conversation // <--- SPREAD THE HISTORY HERE
             ],
             model: "llama-3.3-70b-versatile",
         });
 
         const reply = completion.choices[0]?.message?.content || "No reply";
 
-        // 5. Send Response
         return res.json({ reply: reply });
 
     } catch (err) {
