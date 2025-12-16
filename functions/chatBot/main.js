@@ -1,6 +1,7 @@
 const { Groq } = require('groq-sdk');
 
 module.exports = async ({ req, res, log, error }) => {
+    log("🚀 STARTING NEW CODE: Llama 3.3 Version"); // <--- Add this line
     // 1. Check API Key
     if (!process.env.GROQ_API_KEY) {
         error("Missing API Key");
@@ -30,7 +31,7 @@ module.exports = async ({ req, res, log, error }) => {
                 { role: "system", content: "You are a helpful German language tutor. Keep answers short." },
                 { role: "user", content: userMessage },
             ],
-            model: "llama-3.1-8b-instant",
+            model: "llama-3.3-70b-versatile",
         });
 
         const reply = completion.choices[0]?.message?.content || "No reply";
