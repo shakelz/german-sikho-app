@@ -31,7 +31,7 @@ module.exports = async ({ req, res, log, error }) => {
                 { role: "system", content: "You are a helpful German language tutor. Keep answers short." },
                 { role: "user", content: userMessage },
             ],
-            model: "openai/gpt-oss-120b",
+            model: "llama-3.3-70b-versatile",
         });
 
         const reply = completion.choices[0]?.message?.content || "No reply";
