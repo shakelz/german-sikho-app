@@ -2,7 +2,7 @@ export const PHASES = [
     {
         id: 'phase_1',
         theme: 'forest',
-        backgroundImage: require('../assets/icons/forest_background.png'),
+        backgroundImage: require('../assets/icons/forest_background.jpg'),
         nodes: [
             {
                 id: 'articles',
@@ -94,7 +94,7 @@ export const PHASES = [
     {
         id: 'phase_2',
         theme: 'desert',
-        backgroundImage: require('../assets/icons/desert_background.png'),
+        backgroundImage: require('../assets/icons/desert_background.jpg'),
         nodes: [
             // Applying same layout to Phase 2
             { id: 'akkusativ', type: 'level', title: 'Akkusativ', tile: 'tile_6', icon: 'book', stars: 0, top: '90%', left: '25%', scale: 0.7, zIndex: 10 },
@@ -109,7 +109,7 @@ export const PHASES = [
     {
         id: 'phase_3',
         theme: 'snow',
-        backgroundImage: require('../assets/icons/snow_background.png'),
+        backgroundImage: require('../assets/icons/snow_background.jpg'),
         nodes: [
             { id: 'time_dates', type: 'level', title: 'Time & Dates', tile: 'tile_1', icon: 'book', stars: 0, top: '85%', left: '53%', scale: 0.8, zIndex: 10 },
             { id: 'ts3', type: 'treasure', title: '30 Words', wordCount: 30, top: '75%', left: '67%', scale: 0.8, zIndex: 9 },
@@ -124,7 +124,7 @@ export const PHASES = [
     {
         id: 'phase_4',
         theme: 'lava',
-        backgroundImage: require('../assets/icons/lava_background.png'),
+        backgroundImage: require('../assets/icons/lava_background.jpg'),
         nodes: [
             { id: 'mixed_practice', type: 'level', title: 'Mixed Practice', tile: 'tile_4', icon: 'book', stars: 0, top: '85%', left: '50%', scale: 0.6, zIndex: 10 },
             { id: 'listening_practice', type: 'level', title: 'Listening', tile: 'tile_5', icon: 'book', stars: 0, top: '79%', left: '10%', scale: 0.6, zIndex: 9 },

@@ -140,14 +140,14 @@ const JungleThemeScreen = ({ navigation }) => {
             navigation.navigate('VocabularyLesson', {
                 lessonId: node.id,
                 category: 'family_members',
-                backgroundImage: require('../../../../assets/icons/forest_background.png'),
+                backgroundImage: require('../../../../assets/icons/forest_background.jpg'),
                 themeId: 'jungle'
             });
         } else if (node.id === 'chest_tree') {
             navigation.navigate('VocabularyLesson', {
                 lessonId: node.id,
                 category: 'easy_verbs',
-                backgroundImage: require('../../../../assets/icons/forest_background.png'),
+                backgroundImage: require('../../../../assets/icons/forest_background.jpg'),
                 themeId: 'jungle'
             });
         }

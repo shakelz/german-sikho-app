@@ -7,7 +7,7 @@ import progressService from '../../services/progressService';
 import soundService from '../../services/sound';
 import VocabularyCard from '../../components/shared/VocabularyCard';
 
-const grammarBg = require('../../assets/icons/forest_background.png');
+const grammarBg = require('../../assets/icons/forest_background.jpg');
 const closeButton = require('../../assets/icons/close_button.png');
 const { width, height } = Dimensions.get('window');
 
@@ -269,7 +269,7 @@ const VocabularyLesson = ({ navigation, route }) => {
             {/* Premium Header Card */}
             <View style={styles.headerCard}>
                 <ImageBackground
-                    source={require('../../assets/icons/forest_background.png')}
+                    source={require('../../assets/icons/forest_background.jpg')}
                     style={styles.headerBackground}
                     imageStyle={{ borderRadius: 20, opacity: 0.8 }}
                 >

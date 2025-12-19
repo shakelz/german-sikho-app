@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, ImageBackground, TouchableOpacity, Image, Scrol
 import Sound from 'react-native-sound';
 import { LESSON_CONTENT } from '../../data/lessonContent';
 
-const grammarBg = require('../../assets/icons/forest_background.png');
+const grammarBg = require('../../assets/icons/forest_background.jpg');
 const closeButton = require('../../assets/icons/close_button.png');
 const woodStartButton = require('../../assets/icons/wood_start_qiuz_button.png');
 

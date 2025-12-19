@@ -5,7 +5,7 @@ import Sound from 'react-native-sound';
 import TestService from '../../../../services/TestService';
 
 // Background Image (You might want to use a specific lava background if available)
-const lavaBg = require('../../../../assets/icons/home_bg.png'); // Fallback to home_bg for now
+const lavaBg = require('../../../../assets/icons/home_bg.jpg'); // Fallback to home_bg for now
 
 const LavaThemeScreen = ({ navigation }) => {
     const musicRef = useRef(null);

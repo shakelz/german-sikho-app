@@ -19,7 +19,7 @@ import FloatingAnim from '../../components/animations/FloatingAnim';
 
 const defaultMaleImage = require('../../assets/icons/default_male_profile.png');
 const defaultFemaleImage = require('../../assets/icons/default_female_profile.png');
-const forestBg = require('../../assets/icons/forest_background.png');
+const forestBg = require('../../assets/icons/forest_background.jpg');
 const cloud1 = require('../../assets/icons/cloud_2.png');
 const cloud2 = require('../../assets/icons/cloud_3.png');
 

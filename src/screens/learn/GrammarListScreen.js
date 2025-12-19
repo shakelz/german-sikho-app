@@ -57,7 +57,7 @@ const GrammarListScreen = ({ route, navigation }) => {
 
     return (
         <ImageBackground
-            source={require('../../assets/icons/forest_background.png')} // Default background, can be dynamic
+            source={require('../../assets/icons/forest_background.jpg')} // Default background, can be dynamic
             style={styles.container}
         >
             <View style={styles.overlay}>

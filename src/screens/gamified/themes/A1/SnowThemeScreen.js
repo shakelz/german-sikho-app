@@ -23,7 +23,7 @@ const SnowThemeScreen = ({ navigation }) => {
         id: 'snow_stage_3',
         theme: 'snow',
         title: 'Stage 3: The Snow',
-        backgroundImage: require('../../../../assets/icons/snow_background.png'),
+        backgroundImage: require('../../../../assets/icons/snow_background.jpg'),
         nodes: [
             // 1. Time & Date
             {

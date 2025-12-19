@@ -27,7 +27,7 @@ const client = new Client()
 const functions = new Functions(client);
 
 // --- ASSETS ---
-const homeBg = require('../assets/icons/home_bg.png');
+const homeBg = require('../assets/icons/home_bg.jpg');
 const BOT_AVATAR = require('../../assets/chatBotIcon.png');
 
 // --- STORAGE KEY ---

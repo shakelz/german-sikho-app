@@ -19,7 +19,7 @@ import FloatingAnim from '../../components/animations/FloatingAnim';
 import { getAuth } from '@react-native-firebase/auth';
 import { WORLD_THEMES, THEME_CONFIG, DEFAULT_THEME } from '../../config/worldThemes';
 
-const forestBg = require('../../assets/icons/forest_background.png');
+const forestBg = require('../../assets/icons/forest_background.jpg');
 const cloud1 = require('../../assets/icons/cloud_2.png');
 const cloud2 = require('../../assets/icons/cloud_3.png');
 

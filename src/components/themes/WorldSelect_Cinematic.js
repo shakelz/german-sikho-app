@@ -7,7 +7,7 @@ import storage from '../../services/storage';
 import { useProgress } from '../../context/ProgressContext';
 import UserStateService from '../../services/UserStateService';
 
-const homeBg = require('../../assets/icons/home_bg.png');
+const homeBg = require('../../assets/icons/home_bg.jpg');
 import Header from '../gamified/Header';
 import Footer from '../gamified/Footer';
 import TutorialOverlay from '../gamified/TutorialOverlay';

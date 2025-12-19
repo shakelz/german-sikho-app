@@ -55,7 +55,7 @@ const GrammarLessonScreen = ({ route, navigation }) => {
 
     return (
         <ImageBackground
-            source={require('../../assets/icons/forest_background.png')}
+            source={require('../../assets/icons/forest_background.jpg')}
             style={styles.container}
         >
             <View style={styles.overlay}>

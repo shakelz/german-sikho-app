@@ -23,7 +23,7 @@ const DesertThemeScreen = ({ navigation }) => {
         id: 'desert_stage_2',
         theme: 'desert',
         title: 'Stage 2: The Desert',
-        backgroundImage: require('../../../../assets/icons/desert_background.png'),
+        backgroundImage: require('../../../../assets/icons/desert_background.jpg'),
         nodes: [
             // 1. The Cases (Replaces Akkusativ position)
             {
@@ -176,7 +176,7 @@ const DesertThemeScreen = ({ navigation }) => {
             // Navigate to Vocabulary Chest
             navigation.navigate('VocabularyLesson', {
                 lessonId: node.id,
-                backgroundImage: require('../../../../assets/icons/desert_background.png'),
+                backgroundImage: require('../../../../assets/icons/desert_background.jpg'),
                 themeId: 'desert'
             });
         } else {
